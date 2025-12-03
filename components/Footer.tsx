@@ -6,20 +6,16 @@ const columns = [
     links: ["Who We Are", "Our Team", "Careers", "Contact Us"]
   },
   {
-    title: "Wealth Management",
-    links: ["Alternative Investments", "Australian Equities", "International Equities", "Private Equity", "Foreign Exchange", "Fixed Income"]
-  },
-  {
-    title: "Advisory Services",
+    title: "Services",
     links: ["Capital Markets", "Investment Capabilities", "Settlement & Custody", "How To Invest"]
   },
   {
-    title: "Important Links",
+    title: "Quick Links",
     links: ["Perspectives", "Book Consultation", "Investor Login", "Open Account"]
   },
   {
     title: "Head Office",
-    links: ["Level 34 Corporate Building A 125 Main", "Street City, State, Zipcode Country", "+1 234 0235 0235", "Info@skycapp.com"]
+    links: ["Level 11 410 Collins Street", "Melbourne, 3000", "+1 234 0235 0235", "support@fundeq.com.au"]
   }
 ];
 

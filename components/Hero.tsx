@@ -16,10 +16,10 @@ export default function Hero() {
             Helping founders and investors grow, preserve, and manage equity with expert guidance and transparent updates.
           </p>
           <div className={styles.actions}>
-            <Link className={`${shared.btnGhost} ${shared.btnLarge} ${styles.lightBtn}`} href="#contact">
+            <Link className={`${shared.btnGhost} ${shared.btnLarge} ${styles.lightBtn}`} href="/contact">
               Consultation
             </Link>
-            <Link className={`${shared.btnPrimary} ${shared.btnLarge}`} href="#contact">
+            <Link className={`${shared.btnPrimary} ${shared.btnLarge}`} href="/contact">
               Start Investing
             </Link>
           </div>
