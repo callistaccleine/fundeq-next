@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { useReveal } from "./useReveal";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
+  const { ref, visible } = useReveal(0.3);
+
   return (
-    <section className={styles.hero} id="top">
+    <section className={styles.hero} id="top" ref={ref}>
       <div className={styles.overlay} />
       <div className={shared.container}>
-        <div className={styles.heroContent}>
+        <div className={`${styles.heroContent} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <p className={styles.kicker}>FundEQ Private Market Platform</p>
           <h1 className={styles.title}>
             Turning <span>Today&apos;s Wealth</span> Into Tomorrow&apos;s Legacy

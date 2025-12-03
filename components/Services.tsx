@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useReveal } from "./useReveal";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/Services.module.css";
 
@@ -26,8 +29,10 @@ const services = [
 ];
 
 export default function Services() {
+  const { ref, visible } = useReveal();
+
   return (
-    <section className={styles.section} id="services">
+    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} id="services" ref={ref}>
       <div className={shared.container}>
         <div className={styles.header}>
           <p className={styles.kicker}>Services</p>

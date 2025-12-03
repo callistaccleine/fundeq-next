@@ -25,15 +25,32 @@
 }
 
 .btnPrimary {
-  composes: btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--primary), var(--primary-deep));
   color: #fff;
   box-shadow: var(--glow);
 }
 
 .btnGhost {
-  composes: btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
   border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   color: #e7edf5;
   background: rgba(255, 255, 255, 0.06);
 }
@@ -44,10 +61,18 @@
 }
 
 .btnAccent {
-  composes: btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--accent), #ffda7a);
   color: #0d1321;
-  border: none;
   box-shadow: 0 10px 30px rgba(243, 176, 45, 0.35);
 }
 
@@ -185,4 +210,15 @@
   .gridThree {
     grid-template-columns: 1fr;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
 }

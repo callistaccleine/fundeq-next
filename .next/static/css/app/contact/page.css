@@ -58,13 +58,32 @@
 }
 
 .shared_btnPrimary__Y6AoK {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--primary), var(--primary-deep));
   color: #fff;
   box-shadow: var(--glow);
 }
 
 .shared_btnGhost__AoMNd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
   border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   color: #e7edf5;
   background: rgba(255, 255, 255, 0.06);
 }
@@ -75,9 +94,18 @@
 }
 
 .shared_btnAccent__6UpKU {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--accent), #ffda7a);
   color: #0d1321;
-  border: none;
   box-shadow: 0 10px 30px rgba(243, 176, 45, 0.35);
 }
 
@@ -221,6 +249,17 @@
   }
 }
 
+.shared_reveal__0EqlF {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.shared_revealVisible__UKKXl {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
@@ -288,6 +327,14 @@
   grid-gap: 16px;
   gap: 16px;
   padding-top: 64px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ContactPage_container__JCEf3.ContactPage_revealVisible__lLcwc {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .ContactPage_kicker__xU2fq {

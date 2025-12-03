@@ -28,13 +28,32 @@
 }
 
 .shared_btnPrimary__Y6AoK {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--primary), var(--primary-deep));
   color: #fff;
   box-shadow: var(--glow);
 }
 
 .shared_btnGhost__AoMNd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
   border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   color: #e7edf5;
   background: rgba(255, 255, 255, 0.06);
 }
@@ -45,9 +64,18 @@
 }
 
 .shared_btnAccent__6UpKU {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   background: linear-gradient(135deg, var(--accent), #ffda7a);
   color: #0d1321;
-  border: none;
   box-shadow: 0 10px 30px rgba(243, 176, 45, 0.35);
 }
 
@@ -191,6 +219,17 @@
   }
 }
 
+.shared_reveal__0EqlF {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.shared_revealVisible__UKKXl {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Faq.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -253,85 +292,62 @@
   color: #6b7280;
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
-.Logo_logoGroup__E8zei {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #e7edf5;
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/FinalCta.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.FinalCta_section__EgysB {
+  background: #ffffff;
+  color: #0f1728;
+  padding: 96px 0 88px;
+  text-align: center;
 }
 
-.Logo_logoImg__SQw3B {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  object-fit: contain;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 6px;
-}
-
-.Logo_name__19byl {
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-}
-
-.Logo_subtitle__JR8iv {
-  color: #9aa6ba;
-  font-size: 13px;
-}
-
-/*!********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************/
-.Navbar_navbar__zhZYq {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(8, 12, 24, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
-}
-
-.Navbar_inner__cgkbE {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0;
-  gap: 20px;
-}
-
-.Navbar_navLinks__fa9HS {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-left: auto;
-}
-
-.Navbar_navLink__VR3HP {
-  color: #e7edf5;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.Navbar_navLink__VR3HP:hover {
-  color: #ffffff;
-}
-
-.Navbar_actions__W8prO {
-  display: flex;
+.FinalCta_logoRow__tyisp {
+  display: inline-flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 12px;
 }
 
-@media (max-width: 900px) {
-  .Navbar_navLinks__fa9HS,
-  .Navbar_actions__W8prO {
-    display: none;
+.FinalCta_logo__XXGv_ {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.FinalCta_brand__PlQdt {
+  font-weight: 800;
+  font-size: 18px;
+  color: #0f1728;
+}
+
+.FinalCta_title__KfcuH {
+  margin: 0 auto 26px;
+  max-width: 980px;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.25;
+}
+
+.FinalCta_actions__j7Jaz {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.FinalCta_outlineBtn__g8WAZ {
+  border-color: rgba(15, 23, 40, 0.25);
+  color: #0f1728;
+  background: transparent;
+}
+
+.FinalCta_outlineBtn__g8WAZ:hover {
+  border-color: #0f1728;
+}
+
+@media (max-width: 768px) {
+  .FinalCta_section__EgysB {
+    padding: 80px 0 72px;
   }
 }
 
@@ -668,104 +684,6 @@
   }
 }
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/WhyFundEq.module.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
-.WhyFundEq_section__D1J3y {
-  background: #0b1224;
-  color: #f4f6fb;
-  padding: 96px 0 80px;
-}
-
-.WhyFundEq_inner__1ypJY {
-  width: min(1200px, 100% - 32px);
-  margin: 0 auto;
-}
-
-.WhyFundEq_header__9NBYd {
-  text-align: center;
-  display: grid;
-  grid-gap: 10px;
-  gap: 10px;
-  margin-bottom: 42px;
-}
-
-.WhyFundEq_kicker__G_TTZ {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  color: #7f8aa3;
-}
-
-.WhyFundEq_title__PhPh1 {
-  margin: 0;
-  font-size: clamp(32px, 4vw, 44px);
-  color: #ffffff;
-}
-
-.WhyFundEq_subtitle__44_46 {
-  color: #9aa6ba;
-  margin: 0 auto;
-  max-width: 760px;
-  line-height: 1.6;
-}
-
-.WhyFundEq_bodyGrid___WsQa {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 32px;
-  gap: 32px;
-  align-items: center;
-}
-
-.WhyFundEq_list__q4C4s {
-  display: grid;
-  grid-gap: 18px;
-  gap: 18px;
-}
-
-.WhyFundEq_point__afv_g {
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.WhyFundEq_point__afv_g:last-child {
-  border-bottom: none;
-}
-
-.WhyFundEq_pointTitle__Z_P_G {
-  margin: 0 0 6px;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.WhyFundEq_pointBody__TLIQ1 {
-  margin: 0;
-  color: #9aa6ba;
-  line-height: 1.5;
-}
-
-.WhyFundEq_imageWrap__jeNDw {
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-}
-
-.WhyFundEq_image__MR_UH {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .WhyFundEq_section__D1J3y {
-    padding: 80px 0 64px;
-  }
-}
-
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Testimonials.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
@@ -928,62 +846,183 @@
   }
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/FinalCta.module.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************/
-.FinalCta_section__EgysB {
-  background: #ffffff;
-  color: #0f1728;
-  padding: 96px 0 88px;
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/WhyFundEq.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.WhyFundEq_section__D1J3y {
+  background: #0b1224;
+  color: #f4f6fb;
+  padding: 96px 0 80px;
+}
+
+.WhyFundEq_inner__1ypJY {
+  width: min(1200px, 100% - 32px);
+  margin: 0 auto;
+}
+
+.WhyFundEq_header__9NBYd {
   text-align: center;
-}
-
-.FinalCta_logoRow__tyisp {
-  display: inline-flex;
-  align-items: center;
+  display: grid;
+  grid-gap: 10px;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 42px;
 }
 
-.FinalCta_logo__XXGv_ {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+.WhyFundEq_kicker__G_TTZ {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  color: #7f8aa3;
 }
 
-.FinalCta_brand__PlQdt {
-  font-weight: 800;
-  font-size: 18px;
-  color: #0f1728;
+.WhyFundEq_title__PhPh1 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 44px);
+  color: #ffffff;
 }
 
-.FinalCta_title__KfcuH {
-  margin: 0 auto 26px;
-  max-width: 980px;
-  font-size: clamp(28px, 4vw, 38px);
-  line-height: 1.25;
+.WhyFundEq_subtitle__44_46 {
+  color: #9aa6ba;
+  margin: 0 auto;
+  max-width: 760px;
+  line-height: 1.6;
 }
 
-.FinalCta_actions__j7Jaz {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+.WhyFundEq_bodyGrid___WsQa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 32px;
+  gap: 32px;
+  align-items: center;
 }
 
-.FinalCta_outlineBtn__g8WAZ {
-  border-color: rgba(15, 23, 40, 0.25);
-  color: #0f1728;
-  background: transparent;
+.WhyFundEq_list__q4C4s {
+  display: grid;
+  grid-gap: 18px;
+  gap: 18px;
 }
 
-.FinalCta_outlineBtn__g8WAZ:hover {
-  border-color: #0f1728;
+.WhyFundEq_point__afv_g {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.WhyFundEq_point__afv_g:last-child {
+  border-bottom: none;
+}
+
+.WhyFundEq_pointTitle__Z_P_G {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.WhyFundEq_pointBody__TLIQ1 {
+  margin: 0;
+  color: #9aa6ba;
+  line-height: 1.5;
+}
+
+.WhyFundEq_imageWrap__jeNDw {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.WhyFundEq_image__MR_UH {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .FinalCta_section__EgysB {
-    padding: 80px 0 72px;
+  .WhyFundEq_section__D1J3y {
+    padding: 80px 0 64px;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Logo_logoGroup__E8zei {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e7edf5;
+}
+
+.Logo_logoImg__SQw3B {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px;
+}
+
+.Logo_name__19byl {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.Logo_subtitle__JR8iv {
+  color: #9aa6ba;
+  font-size: 13px;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__zhZYq {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(8, 12, 24, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+}
+
+.Navbar_inner__cgkbE {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+}
+
+.Navbar_navLinks__fa9HS {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.Navbar_navLink__VR3HP {
+  color: #e7edf5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Navbar_navLink__VR3HP:hover {
+  color: #ffffff;
+}
+
+.Navbar_actions__W8prO {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .Navbar_navLinks__fa9HS,
+  .Navbar_actions__W8prO {
+    display: none;
   }
 }
 

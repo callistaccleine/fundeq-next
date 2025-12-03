@@ -1,3 +1,6 @@
+"use client";
+
+import { useReveal } from "./useReveal";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/WhyFundEq.module.css";
 
@@ -13,8 +16,10 @@ const points = [
 ];
 
 export default function WhyFundEq() {
+  const { ref, visible } = useReveal();
+
   return (
-    <section className={styles.section} id="why">
+    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} id="why" ref={ref}>
       <div className={styles.inner}>
         <div className={styles.header}>
           <div className={styles.kicker}>Benefits</div>
@@ -33,7 +38,7 @@ export default function WhyFundEq() {
             ))}
           </div>
           <div className={styles.imageWrap}>
-            <img src="/whychooseus.jpg" alt="Team presenting financial insights" className={styles.image} />
+            <img src="/hero-background.png" alt="Team presenting financial insights" className={styles.image} />
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
+"use client";
+
 import styles from "../styles/Testimonials.module.css";
 import shared from "../styles/shared.module.css";
+import { useReveal } from "./useReveal";
 
 const testimonials = [
   {
@@ -19,8 +22,10 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const { ref, visible } = useReveal();
+
   return (
-    <section className={styles.section} id="testimonials">
+    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} id="testimonials" ref={ref}>
       <div className={shared.container}>
         <div className={styles.header}>
           <p className={styles.kicker}>Testimonials</p>
@@ -42,10 +47,10 @@ export default function Testimonials() {
                   <div className={styles.name}>{item.name}</div>
                   <div className={styles.role}>{item.role}</div>
                 </div>
-                {/* <button className={styles.playBtn}>
+                <button className={styles.playBtn}>
                   <span className={styles.playDot} />
                   <span>Play Video</span>
-                </button> */}
+                </button>
               </div>
             </article>
           ))}

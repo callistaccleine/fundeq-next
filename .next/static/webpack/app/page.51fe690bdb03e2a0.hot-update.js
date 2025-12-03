@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./styles/OurCompany.module.css":
+/*!**************************************!*\
+  !*** ./styles/OurCompany.module.css ***!
+  \**************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"section\":\"OurCompany_section__uhtRC\",\"content\":\"OurCompany_content__GL2N6\",\"visible\":\"OurCompany_visible__JMRbf\",\"copyCol\":\"OurCompany_copyCol___J1SO\",\"kicker\":\"OurCompany_kicker__3k2vY\",\"title\":\"OurCompany_title__4gpxb\",\"body\":\"OurCompany_body__EXUxq\",\"outlineBtn\":\"OurCompany_outlineBtn__Hl0_y\",\"statsCol\":\"OurCompany_statsCol__5OklU\",\"statItem\":\"OurCompany_statItem__Y_R7v\",\"statValue\":\"OurCompany_statValue__6f3_G\",\"statLabel\":\"OurCompany_statLabel__ScxRI\",\"logosWrap\":\"OurCompany_logosWrap__j7_vA\",\"logosInner\":\"OurCompany_logosInner__LI33g\",\"logoItem\":\"OurCompany_logoItem__lC8Rf\",\"trusted\":\"OurCompany_trusted__WWADT\"};\n    if(true) {\n      // 1764736127079\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"df840bbb4d50\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3N0eWxlcy9PdXJDb21wYW55Lm1vZHVsZS5jc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQStILGNBQWMsc0RBQXNEO0FBQ2pPLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vc3R5bGVzL091ckNvbXBhbnkubW9kdWxlLmNzcz83MGVlIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxubW9kdWxlLmV4cG9ydHMgPSB7XCJzZWN0aW9uXCI6XCJPdXJDb21wYW55X3NlY3Rpb25fX3VodFJDXCIsXCJjb250ZW50XCI6XCJPdXJDb21wYW55X2NvbnRlbnRfX0dMMk42XCIsXCJ2aXNpYmxlXCI6XCJPdXJDb21wYW55X3Zpc2libGVfX0pNUmJmXCIsXCJjb3B5Q29sXCI6XCJPdXJDb21wYW55X2NvcHlDb2xfX19KMVNPXCIsXCJraWNrZXJcIjpcIk91ckNvbXBhbnlfa2lja2VyX18zazJ2WVwiLFwidGl0bGVcIjpcIk91ckNvbXBhbnlfdGl0bGVfXzRncHhiXCIsXCJib2R5XCI6XCJPdXJDb21wYW55X2JvZHlfX0VYVXhxXCIsXCJvdXRsaW5lQnRuXCI6XCJPdXJDb21wYW55X291dGxpbmVCdG5fX0hsMF95XCIsXCJzdGF0c0NvbFwiOlwiT3VyQ29tcGFueV9zdGF0c0NvbF9fNU9rbFVcIixcInN0YXRJdGVtXCI6XCJPdXJDb21wYW55X3N0YXRJdGVtX19ZX1I3dlwiLFwic3RhdFZhbHVlXCI6XCJPdXJDb21wYW55X3N0YXRWYWx1ZV9fNmYzX0dcIixcInN0YXRMYWJlbFwiOlwiT3VyQ29tcGFueV9zdGF0TGFiZWxfX1NjeFJJXCIsXCJsb2dvc1dyYXBcIjpcIk91ckNvbXBhbnlfbG9nb3NXcmFwX19qN192QVwiLFwibG9nb3NJbm5lclwiOlwiT3VyQ29tcGFueV9sb2dvc0lubmVyX19MSTMzZ1wiLFwibG9nb0l0ZW1cIjpcIk91ckNvbXBhbnlfbG9nb0l0ZW1fX2xDOFJmXCIsXCJ0cnVzdGVkXCI6XCJPdXJDb21wYW55X3RydXN0ZWRfX1dXQURUXCJ9O1xuICAgIGlmKG1vZHVsZS5ob3QpIHtcbiAgICAgIC8vIDE3NjQ3MzYxMjcwNzlcbiAgICAgIHZhciBjc3NSZWxvYWQgPSByZXF1aXJlKFwiL1VzZXJzL2NhbGxpc3RhY2xlaW5lL0Rlc2t0b3AvZnVuZGVxLW5leHQvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9jb21waWxlZC9taW5pLWNzcy1leHRyYWN0LXBsdWdpbi9obXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJwdWJsaWNQYXRoXCI6XCIvX25leHQvXCIsXCJlc01vZHVsZVwiOmZhbHNlLFwibG9jYWxzXCI6dHJ1ZX0pO1xuICAgICAgbW9kdWxlLmhvdC5kaXNwb3NlKGNzc1JlbG9hZCk7XG4gICAgICBcbiAgICB9XG4gIFxubW9kdWxlLmV4cG9ydHMuX19jaGVja3N1bSA9IFwiZGY4NDBiYmI0ZDUwXCJcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./styles/OurCompany.module.css\n"));
+
+/***/ })
+
+});

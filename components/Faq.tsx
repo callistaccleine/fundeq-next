@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useReveal } from "./useReveal";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/Faq.module.css";
 
@@ -21,9 +22,10 @@ const faqs = [
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
+  const { ref, visible } = useReveal();
 
   return (
-    <section className={`${shared.section} ${styles.section}`}>
+    <section className={`${shared.section} ${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} ref={ref}>
       <div className={shared.container}>
         <div className={shared.gridTwo}>
           <div>

@@ -9,6 +9,14 @@
   display: grid;
   gap: 16px;
   padding-top: 64px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.container.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .kicker {
