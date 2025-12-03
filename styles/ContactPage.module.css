@@ -1,0 +1,80 @@
+.page {
+  background: #ffffff;
+  color: #0f1728;
+  min-height: 100vh;
+  padding: 0 0 96px;
+}
+
+.container {
+  display: grid;
+  gap: 16px;
+  padding-top: 64px;
+}
+
+.kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.title {
+  font-size: clamp(32px, 4vw, 44px);
+  margin: 0;
+  color: #0f1728;
+}
+
+.body {
+  margin: 0 0 12px;
+  color: #6b7280;
+}
+
+.form {
+  margin-top: 12px;
+  display: grid;
+  gap: 16px;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  font-weight: 700;
+  color: #0f1728;
+}
+
+.field input,
+.field textarea {
+  border: 1px solid rgba(15, 23, 40, 0.16);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #0f1728;
+  outline: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

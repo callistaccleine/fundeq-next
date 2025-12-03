@@ -42,10 +42,10 @@ export default function Testimonials() {
                   <div className={styles.name}>{item.name}</div>
                   <div className={styles.role}>{item.role}</div>
                 </div>
-                <button className={styles.playBtn}>
+                {/* <button className={styles.playBtn}>
                   <span className={styles.playDot} />
                   <span>Play Video</span>
-                </button>
+                </button> */}
               </div>
             </article>
           ))}

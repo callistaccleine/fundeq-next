@@ -5,7 +5,7 @@ import "./globals.css";
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
-  title: "FundEQ | Fund Management",
+  title: "FundEQ",
   description:
     "Launch equitable fundraising campaigns, share transparent updates, and build investor relationships with FundEQ's founder-first platform."
 };

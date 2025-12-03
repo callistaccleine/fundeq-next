@@ -1,0 +1,363 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Logo_logoGroup__E8zei {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e7edf5;
+}
+
+.Logo_logoImg__SQw3B {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px;
+}
+
+.Logo_name__19byl {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.Logo_subtitle__JR8iv {
+  color: #9aa6ba;
+  font-size: 13px;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/shared.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.shared_container__jFTUd {
+  width: min(1200px, 100% - 32px);
+  margin: 0 auto;
+}
+
+.shared_section__uOxFS {
+  padding: 96px 0;
+}
+
+.shared_btn__I38Ys {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.shared_btn__I38Ys:hover {
+  transform: translateY(-1px);
+}
+
+.shared_btnPrimary__Y6AoK {
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  color: #fff;
+  box-shadow: var(--glow);
+}
+
+.shared_btnGhost__AoMNd {
+  border: 1px solid var(--border);
+  color: #e7edf5;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.shared_btnGhost__AoMNd:hover {
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.shared_btnAccent__6UpKU {
+  background: linear-gradient(135deg, var(--accent), #ffda7a);
+  color: #0d1321;
+  border: none;
+  box-shadow: 0 10px 30px rgba(243, 176, 45, 0.35);
+}
+
+.shared_btnSmall__HO2IO {
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.shared_btnLarge__Cmsnr {
+  padding: 14px 22px;
+  border-radius: 12px;
+}
+
+.shared_glassCard__23fLF {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.shared_glassCard__23fLF:hover {
+  border-color: rgba(13, 110, 253, 0.6);
+}
+
+.shared_badgePill__2mY25 {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(13, 110, 253, 0.12);
+  color: #d3e4ff;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shared_listClean__ALgIT {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #c9d4e3;
+}
+
+.shared_listClean__ALgIT li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.shared_listClean__ALgIT strong {
+  color: #fff;
+}
+
+.shared_statCard__6pHyr {
+  text-align: center;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+}
+
+.shared_statCard__6pHyr h3 {
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.shared_marketCard__o8C5s {
+  display: grid;
+  grid-gap: 12px;
+  gap: 12px;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  height: 100%;
+}
+
+.shared_marketTags__opYV8 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shared_testimonial__F_8yd {
+  border-left: 3px solid var(--primary);
+  padding-left: 16px;
+  color: #d7e2f0;
+}
+
+.shared_gridTwo__c5qT_ {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_gridThree__gomNl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_gridAuto__ZJXAU {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_flexBetween__GLiCX {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.shared_flexGap__6q3XN {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shared_stack__WKGqq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .shared_section__uOxFS {
+    padding: 64px 0;
+  }
+
+  .shared_gridTwo__c5qT_,
+  .shared_gridThree__gomNl {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__zhZYq {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(8, 12, 24, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+}
+
+.Navbar_inner__cgkbE {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+}
+
+.Navbar_navLinks__fa9HS {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.Navbar_navLink__VR3HP {
+  color: #e7edf5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Navbar_navLink__VR3HP:hover {
+  color: #ffffff;
+}
+
+.Navbar_actions__W8prO {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .Navbar_navLinks__fa9HS,
+  .Navbar_actions__W8prO {
+    display: none;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/ContactPage.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.ContactPage_page__pp_fo {
+  background: #ffffff;
+  color: #0f1728;
+  min-height: 100vh;
+  padding: 0 0 96px;
+}
+
+.ContactPage_container__JCEf3 {
+  display: grid;
+  grid-gap: 16px;
+  gap: 16px;
+  padding-top: 64px;
+}
+
+.ContactPage_kicker__xU2fq {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.ContactPage_title__Bfddy {
+  font-size: clamp(32px, 4vw, 44px);
+  margin: 0;
+  color: #0f1728;
+}
+
+.ContactPage_body__XOykf {
+  margin: 0 0 12px;
+  color: #6b7280;
+}
+
+.ContactPage_form__M93Ry {
+  margin-top: 12px;
+  display: grid;
+  grid-gap: 16px;
+  gap: 16px;
+}
+
+.ContactPage_fieldRow__7Zm5c {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 14px;
+  gap: 14px;
+}
+
+.ContactPage_field__QMSAg {
+  display: grid;
+  grid-gap: 6px;
+  gap: 6px;
+}
+
+.ContactPage_field__QMSAg label {
+  font-weight: 700;
+  color: #0f1728;
+}
+
+.ContactPage_field__QMSAg input,
+.ContactPage_field__QMSAg textarea {
+  border: 1px solid rgba(15, 23, 40, 0.16);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #0f1728;
+  outline: none;
+}
+
+.ContactPage_field__QMSAg input:focus,
+.ContactPage_field__QMSAg textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.ContactPage_field__QMSAg textarea {
+  resize: vertical;
+}
+
+.ContactPage_actions__gfwy_ {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
