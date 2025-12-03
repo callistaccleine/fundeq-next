@@ -1,53 +1,39 @@
 import shared from "../styles/shared.module.css";
 import styles from "../styles/WhyFundEq.module.css";
 
+const points = [
+  {
+    title: "Investment strategies for every client.",
+    body:
+      "Our prefabricated panel assembly allows us to deliver your home up to 3x faster than a typical construction. With a clear budget and a predictable timeline, you get less unfortunate surprises."
+  },
+  { title: "Financial advisor to guide you through every step.", body: "Read More" },
+  { title: "Low fees, full transparency, and a proven track record.", body: "Read More" },
+  { title: "Access to top-performing investment opportunities.", body: "Read More" }
+];
+
 export default function WhyFundEq() {
   return (
-    <section className={shared.section}>
-      <div className={shared.container}>
-        <div className={shared.gridTwo}>
-          <div className={styles.copy}>
-            <div className={shared.badgePill}>Why FundEQ</div>
-            <h2 className={styles.title}>Build the investor relationships you deserve.</h2>
-            <p className={styles.body}>
-              FundEQ is built by founders for founders. That means clarity, speed, and control over your round—without sacrificing compliance or investor quality.
-            </p>
-          </div>
-          <div className={styles.cardsGrid}>
-            <div className={shared.glassCard}>
-              <div className={shared.badgePill}>Signal</div>
-              <p className={shared.testimonial}>
-                "FundEQ let us turn investor interest into action. Updates, Q&A, and documents in one place gave angels conviction fast."
-              </p>
-              <small className={styles.muted}>Amari Chen · CEO, LumenGrid</small>
-            </div>
-            <div className={shared.glassCard}>
-              <div className={shared.badgePill}>Control</div>
-              <p className={shared.testimonial}>
-                "We launched a community round without diluting governance. Compliance was handled and we kept investors engaged weekly."
-              </p>
-              <small className={styles.muted}>Jordan Patel · Founder, BrightLedger</small>
-            </div>
-            <div className={shared.glassCard}>
-              <div className={styles.headlineRow}>
-                <h5 className={styles.cardTitle}>Protect your time, protect your round.</h5>
-                <div className={shared.badgePill}>Security-first</div>
+    <section className={styles.section} id="why">
+      <div className={styles.inner}>
+        <div className={styles.header}>
+          <div className={styles.kicker}>Benefits</div>
+          <h2 className={styles.title}>Why Choose Us?</h2>
+          <p className={styles.subtitle}>
+            Our suite of services is designed to meet all your financial needs, whether you&apos;re planning for retirement, investing in global markets, or building an estate plan.
+          </p>
+        </div>
+        <div className={styles.bodyGrid}>
+          <div className={styles.list}>
+            {points.map((point) => (
+              <div key={point.title} className={styles.point}>
+                <h3 className={styles.pointTitle}>{point.title}</h3>
+                <p className={styles.pointBody}>{point.body}</p>
               </div>
-              <ul className={shared.listClean}>
-                <li>
-                  <span>🔐</span>
-                  <span>End-to-end encryption for signed docs and data rooms.</span>
-                </li>
-                <li>
-                  <span>🧭</span>
-                  <span>Guided funnels reduce drop-off and missed compliance steps.</span>
-                </li>
-                <li>
-                  <span>📊</span>
-                  <span>Engagement analytics show who is leaning in before you hop on a call.</span>
-                </li>
-              </ul>
-            </div>
+            ))}
+          </div>
+          <div className={styles.imageWrap}>
+            <img src="/whychooseus.jpg" alt="Team presenting financial insights" className={styles.image} />
           </div>
         </div>
       </div>

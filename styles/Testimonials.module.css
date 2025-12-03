@@ -1,0 +1,154 @@
+.section {
+  background: #ffffff;
+  color: #0f1728;
+  padding: 88px 0 80px;
+}
+
+.header {
+  text-align: left;
+  display: grid;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  margin: 0;
+  color: #5a6475;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 44px);
+  color: #0f1728;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin: 0;
+  max-width: 740px;
+  line-height: 1.6;
+}
+
+.cardsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 32px 0 20px;
+}
+
+.card {
+  border: 1px solid rgba(15, 23, 40, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+  min-height: 220px;
+  background: #ffffff;
+}
+
+.cardPrimary {
+  border-color: rgba(15, 23, 40, 0.2);
+  box-shadow: 0 14px 40px rgba(15, 23, 40, 0.08);
+}
+
+.cardGhost {
+  opacity: 0.85;
+}
+
+.rating {
+  color: #f5a524;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.quote {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.35;
+  color: #0f1728;
+}
+
+.footerRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: url("/logo.png") center/cover no-repeat;
+  border: 1px solid rgba(15, 23, 40, 0.12);
+}
+
+.name {
+  font-weight: 700;
+  color: #0f1728;
+}
+
+.role {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.playBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.playDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: inline-block;
+}
+
+.navRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.navBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 23, 40, 0.2);
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navBtn:hover {
+  border-color: #0f1728;
+  box-shadow: 0 10px 30px rgba(15, 23, 40, 0.08);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0 64px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .subtitle {
+    margin: 0 auto;
+  }
+}

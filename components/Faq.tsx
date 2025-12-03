@@ -23,7 +23,7 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className={shared.section}>
+    <section className={`${shared.section} ${styles.section}`}>
       <div className={shared.container}>
         <div className={shared.gridTwo}>
           <div>

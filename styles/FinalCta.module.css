@@ -1,0 +1,55 @@
+.section {
+  background: #ffffff;
+  color: #0f1728;
+  padding: 96px 0 88px;
+  text-align: center;
+}
+
+.logoRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 18px;
+  color: #0f1728;
+}
+
+.title {
+  margin: 0 auto 26px;
+  max-width: 980px;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.25;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.outlineBtn {
+  border-color: rgba(15, 23, 40, 0.25);
+  color: #0f1728;
+  background: transparent;
+}
+
+.outlineBtn:hover {
+  border-color: #0f1728;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0 72px;
+  }
+}

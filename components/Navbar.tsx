@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={`${shared.container} ${styles.inner}`}>
-        <Logo withText subtitle="Founder-first fundraising" />
+        <Logo withText subtitle={null} />
         <div className={styles.navLinks}>
           <Link className={styles.navLink} href="#company">
             Our Company

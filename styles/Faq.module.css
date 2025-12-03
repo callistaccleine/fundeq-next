@@ -1,11 +1,16 @@
+.section {
+  background: #ffffff;
+  color: #0f1728;
+}
+
 .title {
-  color: #ffffff;
+  color: #0f1728;
   font-size: clamp(28px, 3vw, 36px);
   margin: 0 0 8px;
 }
 
 .body {
-  color: #c7d2e4;
+  color: #6b7280;
   margin: 0;
 }
 
@@ -15,16 +20,17 @@
 }
 
 .item {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 40, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(15, 23, 40, 0.06);
 }
 
 .button {
   width: 100%;
   background: transparent;
-  color: #e7edf5;
-  font-weight: 600;
+  color: #0f1728;
+  font-weight: 700;
   border: none;
   padding: 14px 16px;
   display: flex;
@@ -36,14 +42,16 @@
 }
 
 .button:hover {
-  color: #ffffff;
+  color: #111827;
 }
 
 .answer {
-  padding: 0 16px 14px;
-  color: #c9d4e3;
+  padding: 0 16px 16px;
+  color: #6b7280;
+  line-height: 1.5;
 }
 
 .icon {
   font-weight: 800;
+  color: #6b7280;
 }
