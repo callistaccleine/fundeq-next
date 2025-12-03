@@ -38,7 +38,7 @@ export default function WhyFundEq() {
             ))}
           </div>
           <div className={styles.imageWrap}>
-            <img src="/hero-background.png" alt="Team presenting financial insights" className={styles.image} />
+            <img src="/whychooseus.jpg" alt="Team presenting financial insights" className={styles.image} />
           </div>
         </div>
       </div>

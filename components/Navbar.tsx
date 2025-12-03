@@ -9,6 +9,9 @@ export default function Navbar() {
       <div className={`${shared.container} ${styles.inner}`}>
         <Logo withText subtitle={undefined} />
         <div className={styles.navLinks}>
+        <Link className={styles.navLink} href="/">
+            Home
+          </Link>
           <Link className={styles.navLink} href="/#company">
             Our Company
           </Link>
