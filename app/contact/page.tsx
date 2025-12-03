@@ -4,14 +4,19 @@ import Navbar from "../../components/Navbar";
 import { useReveal } from "../../components/useReveal";
 import shared from "../../styles/shared.module.css";
 import styles from "../../styles/ContactPage.module.css";
+import { useRef } from "react";
 
 export default function ContactPage() {
   const { ref, visible } = useReveal();
+  const myRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <main className={styles.page}>
       <Navbar />
-      <div className={`${shared.container} ${styles.container} ${visible ? "revealVisible" : ""}`} ref={ref}>
+      <div
+        className={`${shared.container} ${styles.container} ${visible ? "revealVisible" : ""}`}
+        ref={ref as React.MutableRefObject<HTMLDivElement | null>}
+      >
         <p className={styles.kicker}>Contact Us</p>
         <h1 className={styles.title}>Let&apos;s talk about your round.</h1>
         <p className={styles.body}>Share your goals and we&apos;ll respond within one business day.</p>
