@@ -3,11 +3,9 @@ import Hero from "../components/Hero";
 import OurCompany from "../components/OurCompany";
 import Services from "../components/Services";
 import Features from "../components/Features";
-import Steps from "../components/Steps";
 import WhyFundEq from "../components/WhyFundEq";
 import Testimonials from "../components/Testimonials";
 import Faq from "../components/Faq";
-import CtaBanner from "../components/CtaBanner";
 import FinalCta from "../components/FinalCta";
 import Footer from "../components/Footer";
 
