@@ -1,4 +1,5 @@
 import styles from "../styles/Logo.module.css";
+import Image from "next/image";
 
 type Props = {
   withText?: boolean;
@@ -8,7 +9,7 @@ type Props = {
 export default function Logo({ withText = false, subtitle }: Props) {
   return (
     <div className={styles.logoGroup}>
-      <div className={styles.mark}>FQ</div>
+      <Image src="/logo.png" alt="FundEQ logo" width={40} height={40} className={styles.logoImg} priority />
       {withText && (
         <div>
           <div className={styles.name}>FundEQ</div>

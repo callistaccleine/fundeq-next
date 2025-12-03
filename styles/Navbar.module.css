@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(13, 19, 33, 0.9);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(10px);
+  background: rgba(8, 12, 24, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
 }
 
 .inner {
@@ -18,12 +18,15 @@
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
+  flex: 1;
+  justify-content: center;
 }
 
 .navLink {
   color: #e7edf5;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .navLink:hover {
@@ -37,7 +40,8 @@
 }
 
 @media (max-width: 900px) {
-  .navLinks {
+  .navLinks,
+  .actions {
     display: none;
   }
 }

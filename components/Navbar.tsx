@@ -9,19 +9,21 @@ export default function Navbar() {
       <div className={`${shared.container} ${styles.inner}`}>
         <Logo withText subtitle="Founder-first fundraising" />
         <div className={styles.navLinks}>
-          <Link className={styles.navLink} href="#platform">
-            Platform
+          <Link className={styles.navLink} href="#company">
+            Our Company
           </Link>
-          <Link className={styles.navLink} href="#steps">
-            How it works
+          <Link className={styles.navLink} href="#service">
+            Service
           </Link>
-          <Link className={styles.navLink} href="#market">
-            Marketplace
+          <Link className={styles.navLink} href="#team">
+            Team
           </Link>
-          <div className={styles.actions}>
-            <button className={`${shared.btnGhost} ${shared.btnSmall}`}>Login</button>
-            <button className={`${shared.btnPrimary} ${shared.btnSmall}`}>Book a demo</button>
-          </div>
+          <Link className={styles.navLink} href="#contact">
+            Contact Us
+          </Link>
+          <Link className={styles.navLink} href="#call">
+            Call Us
+          </Link>
         </div>
       </div>
     </nav>
