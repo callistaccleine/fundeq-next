@@ -1,0 +1,45 @@
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.headline {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardTitle {
+  color: #ffffff;
+  margin: 0;
+}
+
+.body {
+  color: #c7d2e4;
+  margin: 6px 0 10px;
+}
+
+.highlight {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #9aa6ba;
+}
+
+.fullWidth {
+  width: 100%;
+  justify-content: center;
+}

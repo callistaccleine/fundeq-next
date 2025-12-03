@@ -1,0 +1,762 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/shared.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.shared_container__jFTUd {
+  width: min(1200px, 100% - 32px);
+  margin: 0 auto;
+}
+
+.shared_section__uOxFS {
+  padding: 96px 0;
+}
+
+.shared_btn__I38Ys {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.shared_btn__I38Ys:hover {
+  transform: translateY(-1px);
+}
+
+.shared_btnPrimary__Y6AoK {
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  color: #fff;
+  box-shadow: var(--glow);
+}
+
+.shared_btnGhost__AoMNd {
+  border: 1px solid var(--border);
+  color: #e7edf5;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.shared_btnGhost__AoMNd:hover {
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.shared_btnAccent__6UpKU {
+  background: linear-gradient(135deg, var(--accent), #ffda7a);
+  color: #0d1321;
+  border: none;
+  box-shadow: 0 10px 30px rgba(243, 176, 45, 0.35);
+}
+
+.shared_btnSmall__HO2IO {
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+
+.shared_btnLarge__Cmsnr {
+  padding: 14px 22px;
+  border-radius: 14px;
+}
+
+.shared_glassCard__23fLF {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.shared_glassCard__23fLF:hover {
+  border-color: rgba(13, 110, 253, 0.6);
+}
+
+.shared_badgePill__2mY25 {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(13, 110, 253, 0.12);
+  color: #d3e4ff;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shared_listClean__ALgIT {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #c9d4e3;
+}
+
+.shared_listClean__ALgIT li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.shared_listClean__ALgIT strong {
+  color: #fff;
+}
+
+.shared_statCard__6pHyr {
+  text-align: center;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+}
+
+.shared_statCard__6pHyr h3 {
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.shared_marketCard__o8C5s {
+  display: grid;
+  grid-gap: 12px;
+  gap: 12px;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  height: 100%;
+}
+
+.shared_marketTags__opYV8 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shared_testimonial__F_8yd {
+  border-left: 3px solid var(--primary);
+  padding-left: 16px;
+  color: #d7e2f0;
+}
+
+.shared_gridTwo__c5qT_ {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_gridThree__gomNl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_gridAuto__ZJXAU {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.shared_flexBetween__GLiCX {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.shared_flexGap__6q3XN {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shared_stack__WKGqq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .shared_section__uOxFS {
+    padding: 64px 0;
+  }
+
+  .shared_gridTwo__c5qT_,
+  .shared_gridThree__gomNl {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Faq.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.Faq_title__fSH9N {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0 0 8px;
+}
+
+.Faq_body__j9Xlg {
+  color: #c7d2e4;
+  margin: 0;
+}
+
+.Faq_accordion__6rpWR {
+  display: grid;
+  grid-gap: 12px;
+  gap: 12px;
+}
+
+.Faq_item__gNgaT {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.Faq_button__GL99E {
+  width: 100%;
+  background: transparent;
+  color: #e7edf5;
+  font-weight: 600;
+  border: none;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.Faq_button__GL99E:hover {
+  color: #ffffff;
+}
+
+.Faq_answer__THfq7 {
+  padding: 0 16px 14px;
+  color: #c9d4e3;
+}
+
+.Faq_icon__yjrDY {
+  font-weight: 800;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Logo_logoGroup__E8zei {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e7edf5;
+}
+
+.Logo_mark__rlXcC {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(145deg, var(--primary), var(--primary-deep));
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  box-shadow: var(--glow);
+}
+
+.Logo_name__19byl {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.Logo_subtitle__JR8iv {
+  color: #9aa6ba;
+  font-size: 13px;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__zhZYq {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(13, 19, 33, 0.9);
+  border-bottom: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.Navbar_inner__cgkbE {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.Navbar_navLinks__fa9HS {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Navbar_navLink__VR3HP {
+  color: #e7edf5;
+  font-weight: 600;
+}
+
+.Navbar_navLink__VR3HP:hover {
+  color: #ffffff;
+}
+
+.Navbar_actions__W8prO {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .Navbar_navLinks__fa9HS {
+    display: none;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Hero.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Hero_hero__D0Vj7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.Hero_hero__D0Vj7::after {
+  content: "";
+  position: absolute;
+  inset: 12% auto auto 50%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.2), transparent 60%);
+  filter: blur(6px);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.Hero_ribbon__Qi_mq {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: #cbd5e1;
+}
+
+.Hero_ribbonTag__7_jsB {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(13, 110, 253, 0.15);
+  color: #fff;
+  font-weight: 700;
+}
+
+.Hero_title__GxnES {
+  letter-spacing: -0.02em;
+  font-size: clamp(34px, 4vw, 48px);
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.Hero_lede___NPpI {
+  color: #c7d2e4;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.Hero_heroGrid__jQX_W {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 32px;
+  gap: 32px;
+  align-items: center;
+}
+
+.Hero_actions__4tggz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Hero_statGrid__zCT6W {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 12px;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.Hero_heroImage__JkrNP {
+  position: relative;
+  background: linear-gradient(160deg, rgba(13, 110, 253, 0.2), rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--glow);
+  display: grid;
+  grid-gap: 16px;
+  gap: 16px;
+}
+
+.Hero_heroHeader__dM7XJ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Hero_company__vBphV {
+  margin: 10px 0 2px;
+  color: #ffffff;
+}
+
+.Hero_amountBlock__LUS_e {
+  text-align: right;
+}
+
+.Hero_amount__Vi1iQ {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.Hero_muted__n76UE {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+.Hero_subtle__UpQZG {
+  color: #7c8699;
+  font-size: 13px;
+}
+
+.Hero_updateCard__eoq11 {
+  margin-bottom: 6px;
+}
+
+.Hero_cardHeader__PurkU {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.Hero_metricsRow__uaszm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 12px;
+  gap: 12px;
+}
+
+.Hero_copyCol__SIIkR {
+  display: grid;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.Hero_visualCol__hI2s3 {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .Hero_hero__D0Vj7::after {
+    width: 320px;
+    height: 320px;
+    inset: 20% auto auto 50%;
+  }
+
+  .Hero_heroGrid__jQX_W {
+    grid-template-columns: 1fr;
+  }
+
+  .Hero_heroHeader__dM7XJ {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Features.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.Features_headerRow__LMpGp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Features_sectionTitle__1n5lq {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0;
+}
+
+.Features_cardHead__M_z0F {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.Features_cardTitle__kIle_ {
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px;
+}
+
+.Features_cardBody__cNqC6 {
+  color: #c7d2e4;
+  margin-bottom: 16px;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Steps.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.Steps_stepLine__3gn_w {
+  position: relative;
+  padding-left: 28px;
+  display: grid;
+  grid-gap: 14px;
+  gap: 14px;
+}
+
+.Steps_stepDot__EpT_G {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--primary), var(--accent));
+  position: absolute;
+  left: 2px;
+  top: 0;
+  box-shadow: var(--glow);
+}
+
+.Steps_stepCard__g72hz {
+  position: relative;
+  padding-left: 26px;
+}
+
+.Steps_stepHead__ZyJVF {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.Steps_title__QIgaz {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0 0 8px;
+}
+
+.Steps_body__xvVBT {
+  color: #c7d2e4;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.Steps_cardHead___oexG {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.Steps_cardTitle__FLbEL {
+  color: #ffffff;
+  margin: 0;
+}
+
+.Steps_muted__VmkFD {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+.Steps_subtle__6Dsmt {
+  color: #7c8699;
+  font-size: 13px;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Marketplace.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.Marketplace_headerRow__WN1Wj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.Marketplace_headline__uvL26 {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0;
+}
+
+.Marketplace_cardHead__lW73z {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Marketplace_cardTitle__KBKkp {
+  color: #ffffff;
+  margin: 0;
+}
+
+.Marketplace_body__qEKyt {
+  color: #c7d2e4;
+  margin: 6px 0 10px;
+}
+
+.Marketplace_highlight__59KCX {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.Marketplace_muted__JwT9_ {
+  color: #9aa6ba;
+}
+
+.Marketplace_fullWidth__RnwmZ {
+  width: 100%;
+  justify-content: center;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/WhyFundEq.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.WhyFundEq_title__PhPh1 {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 12px 0 8px;
+}
+
+.WhyFundEq_body__Gdm86 {
+  color: #c7d2e4;
+  line-height: 1.6;
+}
+
+.WhyFundEq_copy__nkiNT {
+  display: grid;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.WhyFundEq_cardsGrid__RL3IL {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 16px;
+  gap: 16px;
+}
+
+.WhyFundEq_muted__1Nvox {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+.WhyFundEq_headlineRow__hOLyQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.WhyFundEq_cardTitle__9kjLw {
+  color: #ffffff;
+  margin: 0;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/CtaBanner.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.CtaBanner_ctaCard__k3sPS {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.18), rgba(243, 176, 45, 0.1));
+  border-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.CtaBanner_actions___lwlp {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.CtaBanner_copy__Gimht {
+  display: grid;
+  grid-gap: 6px;
+  gap: 6px;
+}
+
+.CtaBanner_title__yAmkm {
+  color: #ffffff;
+  margin: 0;
+}
+
+.CtaBanner_body__wR6m_ {
+  color: #c7d2e4;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .CtaBanner_ctaCard__k3sPS {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__yl3k1 {
+  border-top: 1px solid var(--border);
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.Footer_inner__9zxDp {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Footer_muted__XGfoI {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .Footer_inner__9zxDp {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

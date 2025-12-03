@@ -1,0 +1,24 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.muted {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

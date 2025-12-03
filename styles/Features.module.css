@@ -1,0 +1,32 @@
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.cardTitle {
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px;
+}
+
+.cardBody {
+  color: #c7d2e4;
+  margin-bottom: 16px;
+}

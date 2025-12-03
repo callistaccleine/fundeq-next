@@ -1,0 +1,39 @@
+.title {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 12px 0 8px;
+}
+
+.body {
+  color: #c7d2e4;
+  line-height: 1.6;
+}
+
+.copy {
+  display: grid;
+  gap: 10px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.muted {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+.headlineRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  color: #ffffff;
+  margin: 0;
+}

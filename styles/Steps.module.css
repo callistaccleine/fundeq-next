@@ -1,0 +1,64 @@
+.stepLine {
+  position: relative;
+  padding-left: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.stepDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--primary), var(--accent));
+  position: absolute;
+  left: 2px;
+  top: 0;
+  box-shadow: var(--glow);
+}
+
+.stepCard {
+  position: relative;
+  padding-left: 26px;
+}
+
+.stepHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 36px);
+  margin: 0 0 8px;
+}
+
+.body {
+  color: #c7d2e4;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  color: #ffffff;
+  margin: 0;
+}
+
+.muted {
+  color: #9aa6ba;
+  font-size: 14px;
+}
+
+.subtle {
+  color: #7c8699;
+  font-size: 13px;
+}

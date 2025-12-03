@@ -1,0 +1,28 @@
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e7edf5;
+}
+
+.mark {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(145deg, var(--primary), var(--primary-deep));
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  box-shadow: var(--glow);
+}
+
+.name {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: #9aa6ba;
+  font-size: 13px;
+}
