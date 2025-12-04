@@ -51,16 +51,16 @@
   padding: 12px 18px;
   border-radius: 10px;
   font-weight: 700;
-  border: 1px solid var(--border);
+  border: 1px solid #2563eb;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  color: #e7edf5;
-  background: rgba(255, 255, 255, 0.06);
+  color: #2563eb;
+  background: #ffffff;
 }
 
 .shared_btnGhost__AoMNd:hover {
-  border-color: var(--primary);
-  color: #fff;
+  border-color: #1d4ed8;
+  color: #1d4ed8;
 }
 
 .shared_btnAccent__6UpKU {
@@ -368,7 +368,7 @@
 .Hero_overlay__FXqgO {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 8, 18, 0.6), rgba(4, 8, 18, 0.85));
+  background: linear-gradient(180deg, rgba(13, 20, 39, 0.6), rgba(11, 23, 53, 0.85));
   pointer-events: none;
 }
 
@@ -433,6 +433,132 @@
 @media (max-width: 768px) {
   .Hero_hero__D0Vj7 {
     min-height: 80vh;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.Logo_logoGroup__E8zei {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #e7edf5;
+}
+
+.Logo_logoImg__SQw3B {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: transparent;
+  padding: 6px;
+}
+
+.Logo_name__19byl {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.Logo_subtitle__JR8iv {
+  color: #9aa6ba;
+  font-size: 13px;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__zhZYq {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(8, 12, 24, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+}
+
+.Navbar_inner__cgkbE {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+}
+
+.Navbar_navLinks__fa9HS {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.Navbar_navLink__VR3HP {
+  color: #e7edf5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Navbar_navLink__VR3HP:hover {
+  color: #ffffff;
+}
+
+.Navbar_actions__W8prO {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Navbar_menuButton__EL8Lz {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Navbar_menuButton__EL8Lz span {
+  width: 22px;
+  height: 2px;
+  background: #e7edf5;
+  border-radius: 2px;
+}
+
+.Navbar_mobileMenu__q1TgW {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(8, 12, 24, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.Navbar_mobileMenuOpen__gm6hy {
+  display: flex;
+}
+
+.Navbar_mobileLink__3Vzb8 {
+  color: #e7edf5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Navbar_brandLink__Rye6R {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .Navbar_navLinks__fa9HS,
+  .Navbar_actions__W8prO {
+    display: none;
+  }
+
+  .Navbar_menuButton__EL8Lz {
+    display: inline-flex;
   }
 }
 
@@ -614,6 +740,10 @@
   grid-gap: 16px;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+.Services_cardLink__2kkaP {
+  text-decoration: none;
 }
 
 .Services_card__snFuf {
@@ -941,88 +1071,6 @@
 @media (max-width: 768px) {
   .WhyFundEq_section__D1J3y {
     padding: 80px 0 64px;
-  }
-}
-
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Logo.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
-.Logo_logoGroup__E8zei {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #e7edf5;
-}
-
-.Logo_logoImg__SQw3B {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  object-fit: contain;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 6px;
-}
-
-.Logo_name__19byl {
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-}
-
-.Logo_subtitle__JR8iv {
-  color: #9aa6ba;
-  font-size: 13px;
-}
-
-/*!********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Navbar.module.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************/
-.Navbar_navbar__zhZYq {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(8, 12, 24, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
-}
-
-.Navbar_inner__cgkbE {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0;
-  gap: 20px;
-}
-
-.Navbar_navLinks__fa9HS {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-left: auto;
-}
-
-.Navbar_navLink__VR3HP {
-  color: #e7edf5;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.Navbar_navLink__VR3HP:hover {
-  color: #ffffff;
-}
-
-.Navbar_actions__W8prO {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-@media (max-width: 900px) {
-  .Navbar_navLinks__fa9HS,
-  .Navbar_actions__W8prO {
-    display: none;
   }
 }
 

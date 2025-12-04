@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Features from "../components/Features";
 import WhyFundEq from "../components/WhyFundEq";
 import Testimonials from "../components/Testimonials";
+import ContactSection from "../components/ContactSection";
 import Faq from "../components/Faq";
 import FinalCta from "../components/FinalCta";
 import Footer from "../components/Footer";

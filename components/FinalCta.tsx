@@ -9,8 +9,8 @@ export default function FinalCta() {
   const { ref, visible } = useReveal();
 
   return (
-    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} ref={ref}>
-      <div className={shared.container}>
+    <section className={styles.section} ref={ref}>
+      <div className={`${shared.container} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
         <div className={styles.logoRow}>
           <img src="/logo.png" alt="FundEQ" className={styles.logo} />
           <span className={styles.brand}>FundEQ</span>
@@ -19,10 +19,10 @@ export default function FinalCta() {
           We are a full-service financial company founders trust to create products that become verbs
         </h2>
         <div className={styles.actions}>
-          <Link className={`${shared.btnPrimary} ${shared.btnLarge}`} href="#">
+          <Link className={`${shared.btnPrimary} ${shared.btnLarge}`} href="/contact">
             Get Started Today
           </Link>
-          <Link className={`${shared.btnGhost} ${shared.btnLarge} ${styles.outlineBtn}`} href="#">
+          <Link className={`${shared.btnGhost} ${shared.btnLarge} ${styles.outlineBtn}`} href="/contact">
             Download Free Investment Guide
           </Link>
         </div>

@@ -17,6 +17,59 @@
       "static/chunks/main-app.js",
       "static/css/app/contact/page.css",
       "static/chunks/app/contact/page.js"
+    ],
+    "/team/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/team/page.css",
+      "static/chunks/app/team/page.js"
+    ],
+    "/legal/privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/legal/privacy/page.css",
+      "static/chunks/app/legal/privacy/page.js"
+    ],
+    "/legal/terms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/legal/terms/page.css",
+      "static/chunks/app/legal/terms/page.js"
+    ],
+    "/legal/fraud/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/legal/fraud/page.css",
+      "static/chunks/app/legal/fraud/page.js"
+    ],
+    "/services/investments/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/investments/page.css",
+      "static/chunks/app/services/investments/page.js"
+    ],
+    "/services/retirement/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/retirement/page.css",
+      "static/chunks/app/services/retirement/page.js"
+    ],
+    "/services/tax/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/tax/page.css",
+      "static/chunks/app/services/tax/page.js"
+    ],
+    "/services/estate-planning/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/estate-planning/page.css",
+      "static/chunks/app/services/estate-planning/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

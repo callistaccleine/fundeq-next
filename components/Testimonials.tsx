@@ -13,9 +13,9 @@ const testimonials = [
     primary: true
   },
   {
-    quote: "Thanks to their guidance, I achieved my financial goals and built a stable future for my family.",
-    name: "Sarah Thomas",
-    role: "Chief Executive Officer",
+    quote: "The team provided exceptional service and tailored solutions that perfectly matched my investment needs.",
+    name: "Michael Lee",
+    role: "Founder",
     rating: 4,
     primary: false
   }
@@ -25,16 +25,16 @@ export default function Testimonials() {
   const { ref, visible } = useReveal();
 
   return (
-    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} id="testimonials" ref={ref}>
+    <section className={styles.section} id="testimonials" ref={ref}>
       <div className={shared.container}>
-        <div className={styles.header}>
+        <div className={`${styles.header} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <p className={styles.kicker}>Testimonials</p>
           <h2 className={styles.title}>What Our Clients Say</h2>
           <p className={styles.subtitle}>
             Our suite of services is designed to meet all your financial needs, whether you&apos;re planning for retirement, investing in global markets, or building an estate plan.
           </p>
         </div>
-        <div className={styles.cardsRow}>
+        <div className={`${styles.cardsRow} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           {testimonials.map((item, idx) => (
             <article key={idx} className={`${styles.card} ${item.primary ? styles.cardPrimary : styles.cardGhost}`}>
               <div className={styles.rating} aria-label={`${item.rating} star rating`}>
@@ -50,14 +50,6 @@ export default function Testimonials() {
               </div>
             </article>
           ))}
-        </div>
-        <div className={styles.navRow}>
-          <button className={styles.navBtn} aria-label="Previous testimonial">
-            ←
-          </button>
-          <button className={styles.navBtn} aria-label="Next testimonial">
-            →
-          </button>
         </div>
       </div>
     </section>

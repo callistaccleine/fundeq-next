@@ -19,16 +19,16 @@ export default function WhyFundEq() {
   const { ref, visible } = useReveal();
 
   return (
-    <section className={`${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} id="why" ref={ref}>
+    <section className={styles.section} id="why" ref={ref}>
       <div className={styles.inner}>
-        <div className={styles.header}>
+        <div className={`${styles.header} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <div className={styles.kicker}>Benefits</div>
           <h2 className={styles.title}>Why Choose Us?</h2>
           <p className={styles.subtitle}>
             Our suite of services is designed to meet all your financial needs, whether you&apos;re planning for retirement, investing in global markets, or building an estate plan.
           </p>
         </div>
-        <div className={styles.bodyGrid}>
+        <div className={`${styles.bodyGrid} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <div className={styles.list}>
             {points.map((point) => (
               <div key={point.title} className={styles.point}>

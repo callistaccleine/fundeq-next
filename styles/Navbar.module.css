@@ -38,9 +38,53 @@
   gap: 10px;
 }
 
+.menuButton {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton span {
+  width: 22px;
+  height: 2px;
+  background: #e7edf5;
+  border-radius: 2px;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(8, 12, 24, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobileMenuOpen {
+  display: flex;
+}
+
+.mobileLink {
+  color: #e7edf5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+}
+
 @media (max-width: 900px) {
   .navLinks,
   .actions {
     display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
   }
 }

@@ -1,25 +1,50 @@
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 const columns = [
   {
     title: "Our Company",
-    links: ["Who We Are", "Our Team", "Careers", "Contact Us"]
+    links: [
+      { label: "Who We Are", href: "/#company" },
+      { label: "Our Team", href: "/team" }
+    ]
   },
   {
     title: "Services",
-    links: ["Capital Markets", "Investment Capabilities", "Settlement & Custody", "How To Invest"]
+    links: [
+      { label: "Investments", href: "/services/investments" },
+      { label: "Retirement Planning", href: "/services/retirement" },
+      { label: "Estate Planning", href: "/services/estate-planning" },
+      { label: "Tax Strategies", href: "/services/tax" }
+    ]
   },
   {
     title: "Quick Links",
-    links: ["Perspectives", "Book Consultation", "Investor Login", "Open Account"]
+    links: [
+      { label: "Home", href: "/" },
+      { label: "Our Company", href: "/#company" },
+      { label: "Services", href: "/#services" },
+      { label: "Team", href: "/team" },
+      { label: "Contact Us", href: "/contact" }
+    ]
   },
   {
     title: "Head Office",
-    links: ["Level 11 410 Collins Street", "Melbourne, 3000", "+1 234 0235 0235", "support@fundeq.com.au"]
+    links: [
+      { label: "Level 11 410 Collins Street", href: "" },
+      { label: "Melbourne, 3000", href: "" },
+      { label: "+1 234 0235 0235", href: "tel:+123402350235" },
+      { label: "support@fundeq.com.au", href: "mailto:support@fundeq.com.au" }
+    ]
   }
 ];
 
-const policies = ["Terms & Conditions", "Privacy Policy", "Regulatory Affiliations", "Forms & Documentation", "Complaints", "Fraud Alerts"];
+const policies = [
+  { label: "Terms & Conditions", href: "/legal/terms" },
+  { label: "Privacy Policy", href: "/legal/privacy" },
+  { label: "Complaints", href: "/contact" },
+  { label: "Fraud Alerts", href: "/legal/fraud" }
+];
 
 export default function Footer() {
   return (
@@ -30,21 +55,44 @@ export default function Footer() {
             <div key={col.title} className={styles.column}>
               <h4 className={styles.colTitle}>{col.title}</h4>
               <ul className={styles.colLinks}>
-                {col.links.map((link) => (
-                  <li key={link} className={styles.link}>
-                    {link}
-                  </li>
-                ))}
+                {col.links.map((link) => {
+                  if (!link.href) {
+                    return (
+                      <li key={link.label} className={styles.link}>
+                        {link.label}
+                      </li>
+                    );
+                  }
+                  const isExternal = link.href.startsWith("http");
+                  return (
+                    <li key={link.label} className={styles.link}>
+                      {isExternal ? (
+                        <a href={link.href} target="_blank" rel="noreferrer">
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link href={link.href}>{link.label}</Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
         </div>
         <div className={styles.policies}>
-          {policies.map((item) => (
-            <span key={item} className={styles.policyLink}>
-              {item}
-            </span>
-          ))}
+          {policies.map((item) => {
+            const isExternal = item.href.startsWith("http");
+            return isExternal ? (
+              <a key={item.label} href={item.href} className={styles.policyLink} target="_blank" rel="noreferrer">
+                {item.label}
+              </a>
+            ) : (
+              <Link key={item.label} href={item.href} className={styles.policyLink}>
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
         <p className={styles.disclaimer}>
           FUNDEQ Pty Ltd (ACN 649 634 686) holds Australian Financial Services Licence (AFSL 123456) and provides wealth management services in accordance with Australian regulations. Investments

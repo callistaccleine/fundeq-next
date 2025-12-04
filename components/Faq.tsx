@@ -25,11 +25,11 @@ export default function Faq() {
   const { ref, visible } = useReveal();
 
   return (
-    <section className={`${shared.section} ${styles.section} ${shared.reveal} ${visible ? shared.revealVisible : ""}`} ref={ref}>
+    <section className={`${shared.section} ${styles.section}`} ref={ref}>
       <div className={shared.container}>
-        <div className={shared.gridTwo}>
+        <div className={`${shared.gridTwo} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <div>
-            <h2 className={styles.title}>Frequently asked</h2>
+            <h2 className={styles.title}>Frequently Asked Questions</h2>
             <p className={styles.body}>Straightforward answers before you book time with our team.</p>
           </div>
           <div className={styles.accordion}>
@@ -39,7 +39,7 @@ export default function Faq() {
                 <div className={styles.item} key={faq.q}>
                   <button className={styles.button} onClick={() => setOpenIndex(open ? -1 : index)} aria-expanded={open}>
                     <span>{faq.q}</span>
-                    <span className={styles.icon}>{open ? "−" : "+"}</span>
+                    <span className={styles.icon}>{open ? "-" : "+"}</span>
                   </button>
                   {open && <div className={styles.answer}>{faq.a}</div>}
                 </div>
