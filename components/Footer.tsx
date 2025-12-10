@@ -33,8 +33,8 @@ const columns = [
     links: [
       { label: "Level 11 410 Collins Street", href: "" },
       { label: "Melbourne, 3000", href: "" },
-      { label: "+1 234 0235 0235", href: "tel:+123402350235" },
-      { label: "support@fundeq.com.au", href: "mailto:support@fundeq.com.au" }
+      { label: "+61 234 0235 ", href: "tel:+612340235" },
+      { label: "admin@fundeq.com.au", href: "mailto:admin@fundeq.com.au" }
     ]
   }
 ];

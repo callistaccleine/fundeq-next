@@ -67,8 +67,8 @@ export default function ContactSection() {
             </ul>
             <div className={styles.contactChannels}>
               <div className={styles.channel}>
-                <a className={styles.channelLabel} href="mailto:support@fundeq.com.au">Email</a>
-                <span>support@fundeq.com.au</span>
+                <a className={styles.channelLabel} href="mailto:admin@fundeq.com.au">Email</a>
+                <span>admin@fundeq.com.au</span>
               </div>
             </div>
             <div className={styles.locations}>

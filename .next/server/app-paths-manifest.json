@@ -1,9 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/team/page": "app/team/page.js",
-  "/icon.png/route": "app/icon.png/route.js",
-  "/page": "app/page.js",
-  "/services/retirement/page": "app/services/retirement/page.js",
-  "/services/estate-planning/page": "app/services/estate-planning/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js"
 }

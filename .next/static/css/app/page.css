@@ -356,7 +356,8 @@
   \******************************************************************************************************************************************************************************************************************************************************************/
 .Hero_hero__D0Vj7 {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   background: linear-gradient(120deg, rgba(5, 9, 20, 0.82), rgba(6, 10, 22, 0.65)), url("/hero-background.png");
@@ -432,7 +433,8 @@
 
 @media (max-width: 768px) {
   .Hero_hero__D0Vj7 {
-    min-height: 80vh;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 }
 

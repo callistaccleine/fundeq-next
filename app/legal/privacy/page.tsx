@@ -86,7 +86,7 @@ export default function PrivacyPage() {
             <p>
               FundEQ Pty Ltd (ACN 649 634 686)<br />
               Level 11, 410 Collins Street, Melbourne VIC 3000<br />
-              Email: <a href="mailto:support@fundeq.com.au">support@fundeq.com.au</a>
+              Email: <a href="mailto:admin@fundeq.com.au">admin@fundeq.com.au</a>
             </p>
           </div>
         </div>
