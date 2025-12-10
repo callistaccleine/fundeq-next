@@ -1,11 +1,55 @@
 "use client";
 
+import { FormEvent, useState } from "react";
+
 import { useReveal } from "./useReveal";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/ContactSection.module.css";
 
+type Status = "idle" | "submitting" | "success" | "error";
+
 export default function ContactSection() {
   const { ref, visible } = useReveal();
+  const [status, setStatus] = useState<Status>("idle");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus("submitting");
+    setError("");
+
+    const formData = new FormData(event.currentTarget);
+    const valueFor = (key: string) => formData.get(key)?.toString().trim() ?? "";
+
+    const payload = {
+      name: valueFor("name"),
+      email: valueFor("email"),
+      company: valueFor("company"),
+      role: valueFor("role"),
+      capital: valueFor("capital"),
+      timeline: valueFor("timeline"),
+      message: valueFor("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || "Unable to send your request right now.");
+      }
+
+      setStatus("success");
+      event.currentTarget.reset();
+    } catch (err) {
+      setStatus("error");
+      setError(err instanceof Error ? err.message : "Unable to send your request right now.");
+    }
+  };
 
   return (
     <section className={styles.section} id="contact" ref={ref}>
@@ -15,7 +59,7 @@ export default function ContactSection() {
           <p className={styles.body}>Fill out the form below or schedule a meeting with us at your convenience.</p>
         </div>
         <div className={`${styles.grid} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.fieldRow}>
               <div className={styles.field}>
                 <label htmlFor="name">Name</label>
@@ -53,8 +97,22 @@ export default function ContactSection() {
             <label className={styles.checkbox}>
               <input type="checkbox" required /> I agree with the Terms and Conditions
             </label>
-            <button type="submit" className={`${shared.btnPrimary} ${shared.btnLarge} ${styles.primaryBtn}`}>
-              Send your request
+            {status === "success" && (
+              <div className={`${styles.status} ${styles.statusSuccess}`} role="status">
+                Thanks for reaching out. Our team will respond shortly.
+              </div>
+            )}
+            {status === "error" && (
+              <div className={`${styles.status} ${styles.statusError}`} role="alert">
+                {error}
+              </div>
+            )}
+            <button
+              type="submit"
+              className={`${shared.btnPrimary} ${shared.btnLarge} ${styles.primaryBtn}`}
+              disabled={status === "submitting"}
+            >
+              {status === "submitting" ? "Sending..." : "Send your request"}
             </button>
           </form>
           <div className={styles.rightCol}>

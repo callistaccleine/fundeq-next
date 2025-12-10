@@ -5,108 +5,41 @@ import styles from "../styles/TeamSection.module.css";
 
 const leaders = [
   {
-    name: "Amelia Ford",
-    role: "Chief Executive Officer",
-    bio: "Former PE operator with 12+ years leading cross-border deals and founder support.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+    name: "Cormac Heffernan",
+    role: "CEO",
+    bio: "Seasoned financial-services leader and founding partner, with deep expertise in wealth-management platforms, investment operations, and corporate strategy.",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
     socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/cormac-heffernan-771b017?external_page=LPC.Card&external_control=ViewProfileLink&external_app_instance=EEF3EDC8-D9A1-5B96-A73E-0403B261643D&external_page_instance=&experiment=displayLinkedInDataPrebind" },
     ]
   },
   {
-    name: "Liam Chen",
-    role: "Chief Investment Officer",
-    bio: "Ex-global macro PM overseeing $3B AUM with deep capital markets expertise.",
-    image: "https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=800&q=80",
+    name: "Han Soh",
+    role: "Cheif Investment Officer",
+    bio: "Capital markets director with a strong foundation in private banking, specialising in capital raising, IPO/M&A advisory, and structured finance solutions.",
+    image: "/images/team/hansoh-image.jpg",
     socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "Medium", url: "https://medium.com" }
+      { label: "LinkedIn", url: "https://au.linkedin.com/in/han-soh-a31b9b50" },
     ]
   },
   {
-    name: "Sofia Patel",
-    role: "Chief Compliance Officer",
-    bio: "AFSL/SEC veteran ensuring every raise remains audit-ready across jurisdictions.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
-    ]
-  },
-  {
-    name: "Ethan Brooks",
-    role: "VP, Founder Success",
-    bio: "Scaled founder success teams at two unicorns; specializes in investor comms.",
-    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "YouTube", url: "https://www.youtube.com" }
-    ]
-  }
-];
-
-const advisors = [
-  {
-    name: "Elena Ruiz",
-    role: "Regulatory Advisor",
-    bio: "Former ASIC regulator guiding AFSL/SEC compliance across multi-jurisdictional raises.",
-    image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
-    ]
-  },
-  {
-    name: "Marcus Lee",
-    role: "Capital Markets",
-    bio: "Ex-Goldman capital markets lead specializing in structured rounds and secondary programs.",
+    name: "Rufino Villaluz",
+    role: "Investment Manager",
+    bio: "Experienced finance and investment professional with a background spanning private banking, capital management, and alternative-investment advisory across Australia.",
     image: "https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=600&q=80",
     socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "Medium", url: "https://medium.com" }
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/rufino-villaluz-2488241a?external_page=LPC.Card&external_control=ViewProfileLink&external_app_instance=EEF3EDC8-D9A1-5B96-A73E-0403B261643D&external_page_instance=&experiment=displayLinkedInDataPrebind" },
     ]
   },
   {
-    name: "Priya Nair",
-    role: "Risk & Audit",
-    bio: "Big Four audit partner (ret.) focused on investor reporting, controls, and readiness.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
-    ]
-  },
-  {
-    name: "Julian Carter",
-    role: "Security & Privacy",
-    bio: "Security lead (ISO 27001) aligning data room, signatures, and KYC/AML workflows.",
+    name: "Eugene Foo",
+    role: "Fund Administratorufin",
+    bio: "Specialist in reporting, PMO operations, and process optimisation, with expertise in streamlining organisational workflows and master scheduling",
     image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=600&q=80",
     socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "GitHub", url: "https://github.com" }
+      { label: "LinkedIn", url: "https://au.linkedin.com/in/fooeugene" },
     ]
   },
-  {
-    name: "Maya Thompson",
-    role: "Behavioral Economics",
-    bio: "Behavioral economist (Cambridge) crafting investor journeys that convert and retain.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
-    ]
-  },
-  {
-    name: "Daniel Kim",
-    role: "Legal Counsel",
-    bio: "Cross-border offerings counsel ensuring documentation and closing stay frictionless.",
-    image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80",
-    socials: [
-      { label: "LinkedIn", url: "https://www.linkedin.com" },
-      { label: "X", url: "https://twitter.com" }
-    ]
-  }
 ];
 
 export default function TeamSection() {
@@ -158,33 +91,6 @@ export default function TeamSection() {
                 {leader.socials && (
                   <div className={styles.socialRow}>
                     {leader.socials.map((s) => (
-                      <a key={s.label} href={s.url} className={styles.socialLink} aria-label={s.label}>
-                        <span>{iconMap[s.label] ?? "🔗"}</span>
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className={styles.advisorHeader}>
-          <div className={styles.badge}>Advisory</div>
-          <p className={styles.body}>Specialists who underwrite every playbook we ship to founders.</p>
-        </div>
-
-        <div className={styles.advisorGrid}>
-          {advisors.map((advisor) => (
-            <div key={advisor.name} className={styles.advisorCard} style={{ backgroundImage: `url(${advisor.image})` }}>
-              <div className={styles.overlay} />
-              <div className={styles.advisorContent}>
-                <div className={styles.name}>{advisor.name}</div>
-                <div className={styles.role}>{advisor.role}</div>
-                <p className={styles.bio}>{advisor.bio}</p>
-                {advisor.socials && (
-                  <div className={styles.socialRow}>
-                    {advisor.socials.map((s) => (
                       <a key={s.label} href={s.url} className={styles.socialLink} aria-label={s.label}>
                         <span>{iconMap[s.label] ?? "🔗"}</span>
                       </a>

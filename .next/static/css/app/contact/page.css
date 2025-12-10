@@ -471,6 +471,30 @@
   width: 100%;
 }
 
+.ContactSection_form____pK_ button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ContactSection_status__Jk43b {
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.ContactSection_statusSuccess__vuWmz {
+  background: #ecfdf3;
+  color: #065f46;
+  border-color: rgba(6, 95, 70, 0.15);
+}
+
+.ContactSection_statusError__QQ2sU {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: rgba(153, 27, 27, 0.15);
+}
+
 .ContactSection_rightCol__qtflP {
   display: grid;
   grid-gap: 16px;
