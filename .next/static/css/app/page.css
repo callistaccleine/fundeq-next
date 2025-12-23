@@ -221,8 +221,8 @@
 
 .shared_reveal__0EqlF {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .shared_revealVisible__UKKXl {
@@ -238,15 +238,26 @@
   color: #0f1728;
 }
 
+.Faq_section__N8qqg .container,
+.Faq_section__N8qqg .Faq_container__AF3fg {
+  width: min(1100px, 100% - 32px);
+  margin: 0 auto;
+}
+
 .Faq_title__fSH9N {
-  color: #0f1728;
-  font-size: clamp(28px, 3vw, 36px);
-  margin: 0 0 8px;
+  color: #0b1628;
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 0 0 10px;
+  text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .Faq_body__j9Xlg {
-  color: #6b7280;
-  margin: 0;
+  color: #4b5563;
+  margin: 0 auto 28px;
+  text-align: center;
+  max-width: 720px;
+  line-height: 1.7;
 }
 
 .Faq_accordion__6rpWR {
@@ -257,39 +268,43 @@
 
 .Faq_item__gNgaT {
   background: #ffffff;
-  border: 1px solid rgba(15, 23, 40, 0.12);
-  border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(15, 23, 40, 0.06);
+  border: 1px solid rgba(15, 23, 40, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(15, 23, 40, 0.08);
+  overflow: hidden;
 }
 
 .Faq_button__GL99E {
   width: 100%;
   background: transparent;
-  color: #0f1728;
-  font-weight: 700;
+  color: #0b1628;
+  font-weight: 800;
   border: none;
-  padding: 14px 16px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   text-align: left;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .Faq_button__GL99E:hover {
-  color: #111827;
+  color: #0b1628;
 }
 
 .Faq_answer__THfq7 {
-  padding: 0 16px 16px;
-  color: #6b7280;
-  line-height: 1.5;
+  padding: 0 20px 18px;
+  color: #4b5563;
+  line-height: 1.65;
+  font-size: 15px;
 }
 
 .Faq_icon__yjrDY {
   font-weight: 800;
   color: #6b7280;
+  font-size: 18px;
 }
 
 /*!**********************************************************************************************************************************************************************************************************************************************************************!*\
@@ -383,6 +398,7 @@
   grid-gap: 18px;
   gap: 18px;
   padding: 120px 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 .Hero_kicker__bP7KM {
@@ -398,6 +414,7 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .Hero_title__GxnES span {
@@ -410,6 +427,7 @@
   line-height: 1.6;
   margin: 0 auto;
   max-width: 640px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .Hero_actions__4tggz {
@@ -417,6 +435,7 @@
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .Hero_lightBtn__0izWe {
@@ -429,6 +448,7 @@
   color: #9aa6ba;
   font-size: 20px;
   margin-top: 10px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 @media (max-width: 768px) {
@@ -702,9 +722,9 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Services.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************/
 .Services_section__0ro4t {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f9fbff 0%, #eef2f7 100%);
   color: #0f1728;
-  padding: 88px 0 72px;
+  padding: 96px 0 80px;
 }
 
 .Services_header__kUyuV {
@@ -720,7 +740,8 @@
   letter-spacing: 0.08em;
   font-size: 12px;
   margin: 0;
-  color: #5a6475;
+  color: #4a5567;
+  font-weight: 700;
 }
 
 .Services_title__zzit7 {
@@ -732,16 +753,16 @@
 .Services_subtitle____hE0 {
   color: #6b7280;
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 780px;
   line-height: 1.6;
 }
 
 .Services_cardGrid__lvLIu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 16px;
-  gap: 16px;
-  margin-bottom: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 18px;
+  gap: 18px;
+  margin-bottom: 40px;
 }
 
 .Services_cardLink__2kkaP {
@@ -749,50 +770,56 @@
 }
 
 .Services_card__snFuf {
+  position: relative;
   border: 1px solid rgba(15, 23, 40, 0.12);
-  border-radius: 12px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 26px;
   display: grid;
   grid-gap: 18px;
   gap: 18px;
-  min-height: 240px;
-  background: #ffffff;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 260px;
+  background: linear-gradient(160deg, #ffffff 0%, #f5f7fb 100%);
+  box-shadow: 0 18px 36px rgba(15, 23, 40, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .Services_card__snFuf:hover {
-  border-color: rgba(15, 23, 40, 0.25);
-  box-shadow: 0 12px 35px rgba(15, 23, 40, 0.08);
+  border-color: rgba(15, 23, 40, 0.2);
+  box-shadow: 0 28px 52px rgba(15, 23, 40, 0.12);
+  transform: translateY(-6px);
 }
 
 .Services_icon__s9VCm {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid rgba(15, 23, 40, 0.15);
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
   display: grid;
   place-items: center;
   font-size: 18px;
-  color: #0f1728;
-  background: #f9fafb;
+  color: #1d3b72;
+  background: linear-gradient(145deg, #f3f7ff, #e6ecf7);
 }
 
 .Services_cardContent__y5OGW {
   display: grid;
-  grid-gap: 6px;
-  gap: 6px;
+  grid-gap: 8px;
+  gap: 8px;
 }
 
 .Services_cardTitle__c5gJw {
   margin: 0;
-  font-size: 18px;
-  color: #0f1728;
+  font-size: 19px;
+  color: #0b1628;
+  letter-spacing: 0.01em;
+  font-weight: 800;
 }
 
 .Services_cardBody__EznLD {
   margin: 0;
-  color: #6b7280;
+  color: #4b5563;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .Services_ctaRow__sp22y {

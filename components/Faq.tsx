@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "What does onboarding look like?",
-    a: "A FundEQ specialist helps tailor your round structure, uploads your data room, and sets up your investor portal—typically within two business days."
+    a: "A FundEQ specialist helps tailor your round structure, uploads your data room, and sets up your investor portal typically within two business days."
   }
 ];
 
@@ -27,25 +27,23 @@ export default function Faq() {
   return (
     <section className={`${shared.section} ${styles.section}`} ref={ref}>
       <div className={shared.container}>
-        <div className={`${shared.gridTwo} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
-          <div>
-            <h2 className={styles.title}>Frequently Asked Questions</h2>
-            <p className={styles.body}>Straightforward answers before you book time with our team.</p>
-          </div>
-          <div className={styles.accordion}>
-            {faqs.map((faq, index) => {
-              const open = openIndex === index;
-              return (
-                <div className={styles.item} key={faq.q}>
-                  <button className={styles.button} onClick={() => setOpenIndex(open ? -1 : index)} aria-expanded={open}>
-                    <span>{faq.q}</span>
-                    <span className={styles.icon}>{open ? "-" : "+"}</span>
-                  </button>
-                  {open && <div className={styles.answer}>{faq.a}</div>}
-                </div>
-              );
-            })}
-          </div>
+        <div className={`${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
+          <h2 className={styles.title}>Frequently Asked Questions</h2>
+          <p className={styles.body}>Giving you the clarity, control, and flexibility to move your raise forward.</p>
+        </div>
+        <div className={`${styles.accordion} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
+          {faqs.map((faq, index) => {
+            const open = openIndex === index;
+            return (
+              <div className={styles.item} key={faq.q}>
+                <button className={styles.button} onClick={() => setOpenIndex(open ? -1 : index)} aria-expanded={open}>
+                  <span>{faq.q}</span>
+                  <span className={styles.icon}>{open ? "-" : "+"}</span>
+                </button>
+                {open && <div className={styles.answer}>{faq.a}</div>}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

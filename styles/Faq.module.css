@@ -3,15 +3,26 @@
   color: #0f1728;
 }
 
+.section :global(.container),
+.section .container {
+  width: min(1100px, 100% - 32px);
+  margin: 0 auto;
+}
+
 .title {
-  color: #0f1728;
-  font-size: clamp(28px, 3vw, 36px);
-  margin: 0 0 8px;
+  color: #0b1628;
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 0 0 10px;
+  text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .body {
-  color: #6b7280;
-  margin: 0;
+  color: #4b5563;
+  margin: 0 auto 28px;
+  text-align: center;
+  max-width: 720px;
+  line-height: 1.7;
 }
 
 .accordion {
@@ -21,37 +32,41 @@
 
 .item {
   background: #ffffff;
-  border: 1px solid rgba(15, 23, 40, 0.12);
-  border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(15, 23, 40, 0.06);
+  border: 1px solid rgba(15, 23, 40, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(15, 23, 40, 0.08);
+  overflow: hidden;
 }
 
 .button {
   width: 100%;
   background: transparent;
-  color: #0f1728;
-  font-weight: 700;
+  color: #0b1628;
+  font-weight: 800;
   border: none;
-  padding: 14px 16px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   text-align: left;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .button:hover {
-  color: #111827;
+  color: #0b1628;
 }
 
 .answer {
-  padding: 0 16px 16px;
-  color: #6b7280;
-  line-height: 1.5;
+  padding: 0 20px 18px;
+  color: #4b5563;
+  line-height: 1.65;
+  font-size: 15px;
 }
 
 .icon {
   font-weight: 800;
   color: #6b7280;
+  font-size: 18px;
 }

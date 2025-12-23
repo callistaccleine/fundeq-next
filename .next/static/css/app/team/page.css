@@ -251,8 +251,8 @@
 
 .shared_reveal__0EqlF {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .shared_revealVisible__UKKXl {
@@ -401,28 +401,36 @@
 .TeamSection_leadersGrid__a_o9h,
 .TeamSection_advisorGrid__vHBcv {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 14px;
   gap: 14px;
   margin-bottom: 28px;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .TeamSection_advisorCard__89Gi2 {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  min-height: 240px;
+  min-height: 420px;
+  height: 100%;
+  aspect-ratio: 3 / 4;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 32%;
+  background-repeat: no-repeat;
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), background-size 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-color: #0b1224;
+  will-change: transform, box-shadow, background-size;
 }
 
 .TeamSection_overlay__qUMdj {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 18, 36, 0.05) 0%, rgba(11, 18, 36, 0.7) 65%, rgba(11, 18, 36, 0.85) 100%);
-  transition: background 0.2s ease;
+  background: linear-gradient(180deg, rgba(11, 18, 36, 0.02) 0%, rgba(11, 18, 36, 0.28) 45%, rgba(11, 18, 36, 0.55) 80%, rgba(11, 18, 36, 0.68) 100%);
+  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
 }
 
 .TeamSection_advisorContent__MHEXa {
@@ -433,6 +441,11 @@
   display: grid;
   grid-gap: 6px;
   gap: 6px;
+  background: linear-gradient(180deg, rgba(11, 18, 36, 0) 0%, rgba(11, 18, 36, 0.6) 100%);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
 }
 
 .TeamSection_socialRow__CmnqC {
@@ -460,15 +473,16 @@
 .TeamSection_advisorCard__89Gi2:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 20px 54px rgba(0, 0, 0, 0.45);
+  background-size: 110%;
 }
 
 .TeamSection_advisorCard__89Gi2:hover .TeamSection_overlay__qUMdj {
-  background: linear-gradient(180deg, rgba(11, 18, 36, 0.15) 0%, rgba(11, 18, 36, 0.8) 50%, rgba(11, 18, 36, 0.9) 100%);
+  opacity: 0;
 }
 
-.TeamSection_advisorCard__89Gi2:hover .TeamSection_socialRow__CmnqC {
-  opacity: 1;
-  transform: translateY(0);
+.TeamSection_advisorCard__89Gi2:hover .TeamSection_advisorContent__MHEXa {
+  opacity: 0;
+  transform: translateY(12px);
 }
 
 .TeamSection_name__bWMUM {
@@ -539,7 +553,7 @@
   }
 
   .TeamSection_advisorCard__89Gi2 {
-    min-height: 220px;
+    min-height: 320px;
   }
 
   .TeamSection_advisorContent__MHEXa {

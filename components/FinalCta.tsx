@@ -23,7 +23,7 @@ export default function FinalCta() {
             Get Started Today
           </Link>
           <Link className={`${shared.btnGhost} ${shared.btnLarge} ${styles.outlineBtn}`} href="/contact">
-            Download Free Investment Guide
+            Contact Us For Investment Guide
           </Link>
         </div>
       </div>

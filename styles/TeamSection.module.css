@@ -39,27 +39,35 @@
 .leadersGrid,
 .advisorGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 14px;
   margin-bottom: 28px;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .advisorCard {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  min-height: 240px;
+  min-height: 420px;
+  height: 100%;
+  aspect-ratio: 3 / 4;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 32%;
+  background-repeat: no-repeat;
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), background-size 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-color: #0b1224;
+  will-change: transform, box-shadow, background-size;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 18, 36, 0.05) 0%, rgba(11, 18, 36, 0.7) 65%, rgba(11, 18, 36, 0.85) 100%);
-  transition: background 0.2s ease;
+  background: linear-gradient(180deg, rgba(11, 18, 36, 0.02) 0%, rgba(11, 18, 36, 0.28) 45%, rgba(11, 18, 36, 0.55) 80%, rgba(11, 18, 36, 0.68) 100%);
+  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
 }
 
 .advisorContent {
@@ -69,6 +77,10 @@
   z-index: 1;
   display: grid;
   gap: 6px;
+  background: linear-gradient(180deg, rgba(11, 18, 36, 0) 0%, rgba(11, 18, 36, 0.6) 100%);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
 }
 
 .socialRow {
@@ -96,15 +108,16 @@
 .advisorCard:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 20px 54px rgba(0, 0, 0, 0.45);
+  background-size: 110%;
 }
 
 .advisorCard:hover .overlay {
-  background: linear-gradient(180deg, rgba(11, 18, 36, 0.15) 0%, rgba(11, 18, 36, 0.8) 50%, rgba(11, 18, 36, 0.9) 100%);
+  opacity: 0;
 }
 
-.advisorCard:hover .socialRow {
-  opacity: 1;
-  transform: translateY(0);
+.advisorCard:hover .advisorContent {
+  opacity: 0;
+  transform: translateY(12px);
 }
 
 .name {
@@ -174,7 +187,7 @@
   }
 
   .advisorCard {
-    min-height: 220px;
+    min-height: 320px;
   }
 
   .advisorContent {

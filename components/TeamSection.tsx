@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import shared from "../styles/shared.module.css";
 import styles from "../styles/TeamSection.module.css";
 
@@ -8,16 +9,16 @@ const leaders = [
     name: "Cormac Heffernan",
     role: "CEO",
     bio: "Seasoned financial-services leader and founding partner, with deep expertise in wealth-management platforms, investment operations, and corporate strategy.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+    image: "/images/team/cormac-image.png",
     socials: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/cormac-heffernan-771b017?external_page=LPC.Card&external_control=ViewProfileLink&external_app_instance=EEF3EDC8-D9A1-5B96-A73E-0403B261643D&external_page_instance=&experiment=displayLinkedInDataPrebind" },
     ]
   },
   {
     name: "Han Soh",
-    role: "Cheif Investment Officer",
+    role: "Chief Investment Officer",
     bio: "Capital markets director with a strong foundation in private banking, specialising in capital raising, IPO/M&A advisory, and structured finance solutions.",
-    image: "/images/team/hansoh-image.jpg",
+    image: "/images/team/hansoh-image.png",
     socials: [
       { label: "LinkedIn", url: "https://au.linkedin.com/in/han-soh-a31b9b50" },
     ]
@@ -26,16 +27,16 @@ const leaders = [
     name: "Rufino Villaluz",
     role: "Investment Manager",
     bio: "Experienced finance and investment professional with a background spanning private banking, capital management, and alternative-investment advisory across Australia.",
-    image: "https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=600&q=80",
+    image: "/images/team/rufino-image.png",
     socials: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/rufino-villaluz-2488241a?external_page=LPC.Card&external_control=ViewProfileLink&external_app_instance=EEF3EDC8-D9A1-5B96-A73E-0403B261643D&external_page_instance=&experiment=displayLinkedInDataPrebind" },
     ]
   },
   {
     name: "Eugene Foo",
-    role: "Fund Administratorufin",
-    bio: "Specialist in reporting, PMO operations, and process optimisation, with expertise in streamlining organisational workflows and master scheduling",
-    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=600&q=80",
+    role: "Fund Administrator",
+    bio: "Specialist in reporting, PMO operations, and process optimisation, with expertise in streamlining organisational workflows and master scheduling.",
+    image: "/images/team/eugene-foo.svg",
     socials: [
       { label: "LinkedIn", url: "https://au.linkedin.com/in/fooeugene" },
     ]
@@ -110,7 +111,9 @@ export default function TeamSection() {
           </div>
           <div className={styles.actions}>
             <button className={`${shared.btnPrimary} ${shared.btnLarge}`}>Book with our CIO</button>
-            <button className={`${shared.btnGhost} ${shared.btnLarge}`}>See compliance checklist</button>
+            <Link href="/legal/terms" className={`${shared.btnGhost} ${shared.btnLarge}`}>
+              See compliance checklist
+            </Link>
           </div>
         </div>
       </div>

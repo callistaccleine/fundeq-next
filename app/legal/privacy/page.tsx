@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             <ul>
               <li>Access, correction, or deletion of your personal data (subject to legal obligations).</li>
               <li>Opt-out of marketing communications at any time.</li>
-              <li>Contact us for privacy requests: <a href="mailto:privacy@fundeq.com.au">privacy@fundeq.com.au</a>.</li>
+              <li>Contact us for privacy requests: <a href="mailto:admin@fundeq.com.au">admin@fundeq.com.au</a>.</li>
             </ul>
           </div>
 

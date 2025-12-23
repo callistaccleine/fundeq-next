@@ -251,8 +251,8 @@
 
 .shared_reveal__0EqlF {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .shared_revealVisible__UKKXl {
@@ -360,17 +360,27 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/ContactSection.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
 .ContactSection_section__Nadez {
-  background: #ffffff;
+  background: radial-gradient(circle at 10% 20%, #f6f9ff 0%, #eef2f8 40%, #f8fbff 100%);
   color: #0f1728;
-  padding: 80px 0 96px;
+  padding: 96px 0 110px;
+}
+
+.ContactSection_section__Nadez > .container, 
+.ContactSection_section__Nadez > .ContactSection_container__4Xydm,
+.ContactSection_section__Nadez .ContactSection_container__4Xydm {
+  width: min(1300px, 100% - 32px);
+  margin: 0 auto;
 }
 
 .ContactSection_header__sTOS4 {
   text-align: center;
   display: grid;
-  grid-gap: 8px;
-  gap: 8px;
-  margin-bottom: 32px;
+  grid-gap: 10px;
+  gap: 10px;
+  margin-bottom: 40px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ContactSection_badge__57a0I {
@@ -379,55 +389,58 @@
   gap: 6px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(15, 23, 40, 0.06);
-  color: #0f1728;
-  font-weight: 700;
+  background: rgba(37, 99, 235, 0.08);
+  color: #1d2a42;
+  font-weight: 800;
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  border: 1px solid rgba(37, 99, 235, 0.14);
 }
 
 .ContactSection_title__pEBmV {
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(32px, 4vw, 46px);
   margin: 0;
-  color: #0f1728;
+  color: #0b1628;
+  letter-spacing: -0.01em;
 }
 
 .ContactSection_body___GF5K {
   margin: 0;
-  color: #6b7280;
+  color: #4b5563;
+  line-height: 1.7;
 }
 
 .ContactSection_grid__bk7ub {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  grid-gap: 32px;
-  gap: 32px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
 .ContactSection_form____pK_ {
-  background: #ffffff;
-  border: 1px solid rgba(15, 23, 40, 0.12);
-  border-radius: 14px;
-  padding: 20px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(243, 247, 255, 0.98));
+  border: 1px solid rgba(15, 23, 40, 0.08);
+  border-radius: 20px;
+  padding: 26px;
   display: grid;
-  grid-gap: 14px;
-  gap: 14px;
-  box-shadow: 0 12px 30px rgba(15, 23, 40, 0.08);
+  grid-gap: 18px;
+  gap: 18px;
+  box-shadow: 0 20px 48px rgba(15, 23, 40, 0.12);
+  width: min(960px, 100%);
 }
 
 .ContactSection_fieldRow__jts7A {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-gap: 12px;
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 14px;
+  gap: 14px;
 }
 
 .ContactSection_field__hS1Gl {
   display: grid;
-  grid-gap: 6px;
-  gap: 6px;
+  grid-gap: 8px;
+  gap: 8px;
 }
 
 .ContactSection_field__hS1Gl label {
@@ -435,27 +448,38 @@
   color: #0f1728;
   font-size: 13px;
   letter-spacing: 0.01em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
 }
 
 .ContactSection_field__hS1Gl input,
-.ContactSection_field__hS1Gl textarea {
+.ContactSection_field__hS1Gl textarea,
+.ContactSection_field__hS1Gl select {
   border: 1px solid rgba(15, 23, 40, 0.16);
-  border-radius: 10px;
-  padding: 12px 14px;
-  font-size: 14px;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
   background: #ffffff;
   color: #0f1728;
   outline: none;
+  height: 52px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(15, 23, 40, 0.03);
 }
 
 .ContactSection_field__hS1Gl input:focus,
-.ContactSection_field__hS1Gl textarea:focus {
+.ContactSection_field__hS1Gl textarea:focus,
+.ContactSection_field__hS1Gl select:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
 .ContactSection_field__hS1Gl textarea {
   resize: vertical;
+  min-height: 130px;
+  height: auto;
+  line-height: 1.6;
 }
 
 .ContactSection_checkbox__SUufU {
@@ -464,11 +488,19 @@
   gap: 8px;
   font-size: 13px;
   color: #6b7280;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.ContactSection_link__7Kb9a {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 .ContactSection_primaryBtn__gn4wB {
   margin-top: 4px;
   width: 100%;
+  border-radius: 12px;
 }
 
 .ContactSection_form____pK_ button:disabled {
@@ -495,16 +527,25 @@
   border-color: rgba(153, 27, 27, 0.15);
 }
 
-.ContactSection_rightCol__qtflP {
+.ContactSection_infoPanel__TXvf2 {
   display: grid;
-  grid-gap: 16px;
-  gap: 16px;
+  grid-gap: 14px;
+  gap: 14px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  width: min(960px, 100%);
+  margin: 12px auto 0;
 }
 
 .ContactSection_subhead__MYiml {
   margin: 0;
   font-size: 16px;
-  color: #0f1728;
+  color: #0b1628;
+  letter-spacing: -0.01em;
+  font-weight: 800;
 }
 
 .ContactSection_bulletList__uj5TC {
@@ -514,7 +555,7 @@
   display: grid;
   grid-gap: 10px;
   gap: 10px;
-  color: #6b7280;
+  color: #4c5564;
 }
 
 .ContactSection_bulletList__uj5TC li {
@@ -543,6 +584,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #6b7280;
+  font-weight: 700;
 }
 
 .ContactSection_channel__Qb1ec {
@@ -564,7 +606,7 @@
 }
 
 .ContactSection_locationText__heeXt {
-  color: #6b7280;
+  color: #4c5564;
 }
 
 @media (max-width: 900px) {

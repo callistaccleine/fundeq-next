@@ -18,16 +18,20 @@ export default function ContactSection() {
     setStatus("submitting");
     setError("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const valueFor = (key: string) => formData.get(key)?.toString().trim() ?? "";
 
     const payload = {
-      name: valueFor("name"),
+      firstName: valueFor("firstName"),
+      lastName: valueFor("lastName"),
       email: valueFor("email"),
-      company: valueFor("company"),
-      role: valueFor("role"),
-      capital: valueFor("capital"),
-      timeline: valueFor("timeline"),
+      phone: valueFor("phone"),
+      suburb: valueFor("suburb"),
+      postcode: valueFor("postcode"),
+      state: valueFor("state"),
+      purpose: valueFor("purpose"),
+      hearAbout: valueFor("hearAbout"),
       message: valueFor("message"),
     };
 
@@ -44,7 +48,7 @@ export default function ContactSection() {
       }
 
       setStatus("success");
-      event.currentTarget.reset();
+      form.reset();
     } catch (err) {
       setStatus("error");
       setError(err instanceof Error ? err.message : "Unable to send your request right now.");
@@ -62,40 +66,89 @@ export default function ContactSection() {
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.fieldRow}>
               <div className={styles.field}>
-                <label htmlFor="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required />
+                <label htmlFor="firstName">First name *</label>
+                <input id="firstName" name="firstName" type="text" placeholder="First name" required />
               </div>
               <div className={styles.field}>
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email" required />
-              </div>
-            </div>
-            <div className={styles.fieldRow}>
-              <div className={styles.field}>
-                <label htmlFor="company">Company</label>
-                <input id="company" name="company" type="text" placeholder="FundEQ" />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="role">Role</label>
-                <input id="role" name="role" type="text" placeholder="Founder" />
+                <label htmlFor="lastName">Last name *</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last name" required />
               </div>
             </div>
             <div className={styles.fieldRow}>
               <div className={styles.field}>
-                <label htmlFor="capital">Target raise</label>
-                <input id="capital" name="capital" type="text" placeholder="$2.5M SAFE / equity / rev share" />
+                <label htmlFor="phone">Phone *</label>
+                <input id="phone" name="phone" type="tel" placeholder="+614 XX XXX XXX" required />
               </div>
               <div className={styles.field}>
-                <label htmlFor="timeline">Timeline</label>
-                <input id="timeline" name="timeline" type="text" placeholder="e.g. Launching in 30-60 days" />
+                <label htmlFor="email">Email *</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div className={styles.fieldRow}>
+              <div className={styles.field}>
+                <label htmlFor="suburb">Suburb *</label>
+                <input id="suburb" name="suburb" type="text" placeholder="Suburb" required />
+              </div>
+              <div className={styles.field}>
+                <label htmlFor="postcode">Postcode *</label>
+                <input id="postcode" name="postcode" type="text" placeholder="Postcode" required />
+              </div>
+            </div>
+            <div className={styles.fieldRow}>
+              <div className={styles.field}>
+                <label htmlFor="state">State *</label>
+                <select id="state" name="state" defaultValue="" required>
+                  <option value="" disabled>
+                    Select state
+                  </option>
+                  <option value="NSW">NSW</option>
+                  <option value="VIC">VIC</option>
+                  <option value="QLD">QLD</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="ACT">ACT</option>
+                  <option value="NT">NT</option>
+                </select>
+              </div>
+              <div className={styles.field}>
+                <label htmlFor="purpose">Purpose *</label>
+                <select id="purpose" name="purpose" defaultValue="" required>
+                  <option value="" disabled>
+                    Select purpose
+                  </option>
+                  <option value="capital-raise">Capital raise</option>
+                  <option value="investor-relations">Investor relations</option>
+                  <option value="compliance">Compliance</option>
+                  <option value="advisory">Advisory</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
             </div>
             <div className={styles.field}>
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Enter your message" rows={4} required />
+              <label htmlFor="hearAbout">How did you hear about us? *</label>
+              <select id="hearAbout" name="hearAbout" defaultValue="" required>
+                <option value="" disabled>
+                  Select an option
+                </option>
+                <option value="referral">Referral</option>
+                <option value="investor">Investor</option>
+                <option value="event">Event</option>
+                <option value="search">Search</option>
+                <option value="social">Social</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="message">Additional comments</label>
+              <textarea id="message" name="message" placeholder="Tell us more about your needs" rows={4} />
             </div>
             <label className={styles.checkbox}>
-              <input type="checkbox" required /> I agree with the Terms and Conditions
+              <input type="checkbox" required /> I agree with the{" "}
+              <a href="/legal/terms" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                Terms and Conditions
+              </a>
             </label>
             {status === "success" && (
               <div className={`${styles.status} ${styles.statusSuccess}`} role="status">
@@ -115,26 +168,26 @@ export default function ContactSection() {
               {status === "submitting" ? "Sending..." : "Send your request"}
             </button>
           </form>
-          <div className={styles.rightCol}>
-            <h4 className={styles.subhead}>With our services you can</h4>
-            <ul className={styles.bulletList}>
-              <li>Improve usability of your product</li>
-              <li>Engage investors at a higher level and outperform your competition</li>
-              <li>Reduce onboarding time and improve close rates</li>
-              <li>Balance investor needs with your business goals</li>
-            </ul>
-            <div className={styles.contactChannels}>
-              <div className={styles.channel}>
-                <a className={styles.channelLabel} href="mailto:admin@fundeq.com.au">Email</a>
-                <span>admin@fundeq.com.au</span>
-              </div>
+        </div>
+        <div className={`${styles.infoPanel} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
+          <h4 className={styles.subhead}>With our services you can</h4>
+          <ul className={styles.bulletList}>
+            <li>Improve usability of your product</li>
+            <li>Engage investors at a higher level and outperform your competition</li>
+            <li>Reduce onboarding time and improve close rates</li>
+            <li>Balance investor needs with your business goals</li>
+          </ul>
+          <div className={styles.contactChannels}>
+            <div className={styles.channel}>
+              <a className={styles.channelLabel} href="mailto:admin@fundeq.com.au">Email</a>
+              <span>admin@fundeq.com.au</span>
             </div>
-            <div className={styles.locations}>
-              <div>
-                <div className={styles.locationLabel}>Australia</div>
-                <div className={styles.locationText}>Level 11, 410 Collins Street</div>
-                <div className={styles.locationText}>Melbourne VIC 3000</div>
-              </div>
+          </div>
+          <div className={styles.locations}>
+            <div>
+              <div className={styles.locationLabel}>Australia</div>
+              <div className={styles.locationText}>Level 11, 410 Collins Street</div>
+              <div className={styles.locationText}>Melbourne VIC 3000</div>
             </div>
           </div>
         </div>

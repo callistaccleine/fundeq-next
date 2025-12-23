@@ -123,25 +123,27 @@ export function ServiceDetailView({ service }: { service: ServiceDetail }) {
           <p className={styles.intro}>{service.intro}</p>
         </div>
 
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <h3>What you get</h3>
-            <ul>
-              {service.benefits.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+        <div className={styles.layout}>
+          <div className={styles.mainColumn}>
+            <div className={styles.block}>
+              <div className={styles.blockTitle}>What you get</div>
+              <ul className={styles.richList}>
+                {service.benefits.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className={styles.block}>
+              <div className={styles.blockTitle}>How we work</div>
+              <ol className={styles.richList}>
+                {service.checklist.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ol>
+            </div>
           </div>
-          <div className={styles.card}>
-            <h3>How we work</h3>
-            <ul>
-              {service.checklist.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div className={styles.card}>
-            <h3>Snapshot</h3>
+          <aside className={styles.snapshot}>
+            <div className={styles.snapshotTitle}>Snapshot</div>
             <div className={styles.stats}>
               {service.stats.map((stat) => (
                 <div key={stat.label} className={styles.statItem}>
@@ -150,7 +152,7 @@ export function ServiceDetailView({ service }: { service: ServiceDetail }) {
                 </div>
               ))}
             </div>
-          </div>
+          </aside>
         </div>
 
         <div className={styles.actions}>
