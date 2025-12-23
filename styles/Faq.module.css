@@ -70,3 +70,21 @@
   color: #6b7280;
   font-size: 18px;
 }
+
+.categories {
+  display: grid;
+  gap: 16px;
+}
+
+.category {
+  display: grid;
+  gap: 10px;
+}
+
+.categoryTitle {
+  margin: 0;
+  font-size: 16px;
+  color: #0b1628;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}

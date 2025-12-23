@@ -9,10 +9,18 @@ import styles from "../styles/OurCompany.module.css";
 const stats = [
   { target: 150, suffix: "+", label: "Assets under management" },
   { target: 10000, suffix: "+", label: "Trusted clients globally" },
-  { target: 14, suffix: "+", label: "Years of experience" }
+  { target: 20, suffix: "+", label: "Years of experience" }
 ];
 
-const logos = ["Handelsblatt", "Money", "Die Zeit", "Fonds", "Börse", "Extra", "Allurion"];
+const logos = [
+  { name: "Handelsblatt Capital", initials: "HC" },
+  { name: "Money", initials: "M" },
+  { name: "Die Zeit", initials: "DZ" },
+  { name: "Fonds Global", initials: "FG" },
+  { name: "Börse Review", initials: "BR" },
+  { name: "Extra Markets", initials: "EM" },
+  { name: "Allurion Partners", initials: "AP" }
+];
 
 export default function OurCompany() {
   const { ref, visible } = useReveal(0.35);
@@ -61,14 +69,17 @@ export default function OurCompany() {
       </div>
       <div className={`${styles.logosWrap} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
         <div className={shared.container}>
-          <div className={styles.logosInner}>
-            {logos.map((logo) => (
-              <div key={logo} className={styles.logoItem}>
-                {logo}
-              </div>
-            ))}
+          <div className={styles.logoMarquee}>
+            <div className={styles.logoTrack}>
+              {[...logos, ...logos].map((logo, idx) => (
+                <div key={`${logo.name}-${idx}`} className={styles.logoItem}>
+                  <div className={styles.logoMark}>{logo.initials}</div>
+                  <div className={styles.logoName}>{logo.name}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          <p className={styles.trusted}>Trusted by more than 12,000 financial companies in 140 countries.</p>
+          <p className={styles.trusted}>Trusted by more than 12,000 financial companies in 40 countries.</p>
         </div>
       </div>
     </section>

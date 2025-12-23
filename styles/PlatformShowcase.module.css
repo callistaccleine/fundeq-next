@@ -1,0 +1,100 @@
+.section {
+  background: #ffffff;
+  color: #0f1728;
+}
+
+.lower {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: clamp(28px, 4vw, 38px);
+  color: #0b1628;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  color: #4b5563;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.copyBlock {
+  display: grid;
+  gap: 14px;
+}
+
+.featureList {
+  display: grid;
+  gap: 10px;
+}
+
+.featureRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid rgba(15, 23, 40, 0.08);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 23, 40, 0.06);
+}
+
+.featureDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0f1728;
+}
+
+.featureTitle {
+  font-weight: 800;
+  color: #0b1628;
+}
+
+.featureBody {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.featureLink {
+  color: #0b1628;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.featureLink:hover {
+  text-decoration: underline;
+}
+
+.chartVisual {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  justify-self: center;
+  width: 100%;
+}
+
+.donut {
+  width: 100%;
+  max-width: 280px;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.12));
+}
+
+@media (max-width: 768px) {
+  .lower {
+    grid-template-columns: 1fr;
+  }
+
+  .metricsRow {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}

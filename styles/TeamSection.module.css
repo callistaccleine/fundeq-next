@@ -65,8 +65,8 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 18, 36, 0.02) 0%, rgba(11, 18, 36, 0.28) 45%, rgba(11, 18, 36, 0.55) 80%, rgba(11, 18, 36, 0.68) 100%);
-  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background: linear-gradient(180deg, rgba(11, 18, 36, 0.18) 0%, rgba(11, 18, 36, 0.42) 55%, rgba(11, 18, 36, 0.6) 100%);
+  transition: opacity 0.35s ease;
   opacity: 1;
 }
 
@@ -79,7 +79,7 @@
   gap: 6px;
   background: linear-gradient(180deg, rgba(11, 18, 36, 0) 0%, rgba(11, 18, 36, 0.6) 100%);
   backdrop-filter: blur(2px);
-  transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: opacity 0.35s ease, transform 0.35s ease;
   opacity: 1;
 }
 
@@ -88,7 +88,7 @@
   gap: 8px;
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .socialLink {
@@ -112,12 +112,12 @@
 }
 
 .advisorCard:hover .overlay {
-  opacity: 0;
+  opacity: 0.25;
 }
 
-.advisorCard:hover .advisorContent {
-  opacity: 0;
-  transform: translateY(12px);
+.advisorCard:hover .socialRow {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .name {

@@ -73,37 +73,57 @@
   margin-top: 60px;
 }
 
-.logosInner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+.logoMarquee {
+  overflow: hidden;
   border: 1px solid rgba(15, 23, 40, 0.08);
   background: #f8f9fb;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 14px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.logoTrack {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: marquee 26s linear infinite;
 }
 
 .logoItem {
-  padding: 18px 12px;
-  text-align: center;
-  color: #6b7280;
-  border-right: 1px solid rgba(15, 23, 40, 0.08);
-  border-bottom: 1px solid rgba(15, 23, 40, 0.08);
-  font-weight: 600;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(243, 246, 252, 0.95));
+  border: 1px solid rgba(15, 23, 40, 0.08);
+  box-shadow: 0 8px 20px rgba(15, 23, 40, 0.06);
+  min-width: 220px;
+}
+
+.logoMark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(13, 18, 36, 0.08));
+  color: #0f1728;
+  font-weight: 800;
   font-size: 14px;
+  border: 1px solid rgba(15, 23, 40, 0.08);
 }
 
-.logoItem:nth-child(n + 5) {
-  border-bottom: none;
-}
-
-.logosInner > :nth-child(4n) {
-  border-right: none;
+.logoName {
+  color: #0f1728;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .trusted {
   text-align: center;
   color: #5a6475;
-  margin: 16px auto 0;
+  margin: 18px auto 0;
   font-size: 14px;
 }
 
@@ -111,16 +131,13 @@
   .section {
     padding: 72px 0 56px;
   }
+}
 
-  .logosInner > :nth-child(4n) {
-    border-right: 1px solid rgba(15, 23, 40, 0.08);
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-
-  .logosInner > :nth-child(even) {
-    border-right: none;
-  }
-
-  .logoItem:nth-child(n + 5) {
-    border-bottom: 1px solid rgba(15, 23, 40, 0.08);
+  100% {
+    transform: translateX(-50%);
   }
 }
