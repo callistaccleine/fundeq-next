@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-labelledby="title">
+  <title>Allocation chart</title>
+  <circle cx="70" cy="70" r="64" fill="#e9f1ff" />
+  <path d="M70 10a60 60 0 1 1-47.43 95.34L70 70z" fill="#2563eb" />
+  <path d="M70 10v60L22.57 105.34A60 60 0 0 1 70 10z" fill="#9fc3ff" />
+  <circle cx="70" cy="70" r="28" fill="#ffffff" />
+  <circle cx="70" cy="70" r="18" fill="#e0ebff" />
+</svg>

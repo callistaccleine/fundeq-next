@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import OurCompany from "../components/OurCompany";
+import PlatformShowcase from "../components/PlatformShowcase";
 import Services from "../components/Services";
 import Features from "../components/Features";
 import WhyFundEq from "../components/WhyFundEq";
@@ -16,11 +17,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <OurCompany />
+      <PlatformShowcase />
       <Services />
       {/* <Features /> */}
       <WhyFundEq />
       <Testimonials />
-      <Faq />
       <FinalCta />
       <Footer />
     </main>

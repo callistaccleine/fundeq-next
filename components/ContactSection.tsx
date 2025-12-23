@@ -57,7 +57,7 @@ export default function ContactSection() {
 
   return (
     <section className={styles.section} id="contact" ref={ref}>
-      <div className={shared.container}>
+      <div className={styles.wrap}>
         <div className={`${styles.header} ${shared.reveal} ${visible ? shared.revealVisible : ""}`}>
           <h2 className={styles.title}>Get in touch with us</h2>
           <p className={styles.body}>Fill out the form below or schedule a meeting with us at your convenience.</p>

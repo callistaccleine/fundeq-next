@@ -41,6 +41,18 @@
       "static/chunks/main-app.js",
       "static/css/app/legal/fraud/page.css",
       "static/chunks/app/legal/fraud/page.js"
+    ],
+    "/services/retirement/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/retirement/page.css",
+      "static/chunks/app/services/retirement/page.js"
+    ],
+    "/services/investments/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/services/investments/page.css",
+      "static/chunks/app/services/investments/page.js"
     ]
   }
 }
