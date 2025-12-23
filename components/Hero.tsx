@@ -6,7 +6,7 @@ import shared from "../styles/shared.module.css";
 import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
-  const { ref, visible } = useReveal(0.3);
+  const { ref, visible } = useReveal(0.4);
 
   return (
     <section className={styles.hero} id="top" ref={ref}>

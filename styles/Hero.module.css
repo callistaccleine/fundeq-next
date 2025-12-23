@@ -26,6 +26,7 @@
   display: grid;
   gap: 18px;
   padding: 120px 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 .kicker {
@@ -41,6 +42,7 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .title span {
@@ -53,6 +55,7 @@
   line-height: 1.6;
   margin: 0 auto;
   max-width: 640px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .actions {
@@ -60,6 +63,7 @@
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .lightBtn {
@@ -72,6 +76,7 @@
   color: #9aa6ba;
   font-size: 20px;
   margin-top: 10px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 @media (max-width: 768px) {

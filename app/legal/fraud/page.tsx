@@ -35,7 +35,7 @@ export default function FraudAlertsPage() {
           <div className={styles.block}>
             <h2>Reporting suspicious activity</h2>
             <p>
-              If you suspect fraud or receive a suspicious message, contact us at <a href="mailto:admin@fundeq.com.au">admin@fundeq.com.au</a> or call +61 2 5555 5555. Include screenshots or details to help our security team respond quickly.
+              If you suspect fraud or receive a suspicious message, contact us at <a href="mailto:admin@fundeq.com.au">admin@fundeq.com.au</a>. Include details to help our security team respond quickly.
             </p>
           </div>
 
@@ -51,7 +51,6 @@ export default function FraudAlertsPage() {
             <p>
               FundEQ Security Team<br />
               Email: <a href="mailto:admin@fundeq.com.au">admin@fundeq.com.au</a><br />
-              Phone: +61 2 5555 5555
             </p>
           </div>
         </div>

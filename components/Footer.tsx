@@ -3,13 +3,6 @@ import styles from "../styles/Footer.module.css";
 
 const columns = [
   {
-    title: "Our Company",
-    links: [
-      { label: "Who We Are", href: "/#company" },
-      { label: "Our Team", href: "/team" }
-    ]
-  },
-  {
     title: "Services",
     links: [
       { label: "Investments", href: "/services/investments" },

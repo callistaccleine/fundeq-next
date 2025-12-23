@@ -12,7 +12,7 @@ const links = [
   { label: "Services", href: "/#services" },
   { label: "Team", href: "/team" },
   { label: "Contact Us", href: "/contact" },
-  { label: "Call Us", href: "tel:+123402350235" }
+  // { label: "Call Us", href: "tel:+123402350235" }
 ];
 
 export default function Navbar() {
